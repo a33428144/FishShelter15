@@ -1,0 +1,336 @@
+/*!
+ * 
+
+ */
+
+
+/* Responsive Styles */
+
+@media(min-width:1200px) {
+    .container {
+        width: 1070px;
+    }
+    /* Footer Styles */
+    footer {
+        margin: 50px 0;
+    }
+
+    .navbar {
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+
+    .img-portfolio {
+        margin-bottom: 40px;
+    }
+
+    .img-hover:hover {
+        opacity: 0.8;
+    }
+
+    .no_login {
+        margin-right: 170px !important;
+    }
+
+    .already_login {
+        margin-right: 150px !important;
+    }
+
+    .QA_box_padding {
+        padding: 50px;
+        padding-bottom: 20px;
+    }
+}
+
+@media(min-width: 1024px) and (max-width: 1200px) {
+    .no_login {
+        margin-right: 100px !important;
+    }
+
+    .already_login {
+        margin-right: 80px !important;
+    }
+}
+
+@media(min-width:768px) {
+    .logo {
+        text-align: center;
+        padding: 6px 0;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .navbar-nav ul.dropdown-menu a {
+        line-height: 0px;
+        height: 50px;
+        padding-top: 0;
+    }
+    /* Desktop Nav */
+    .nav > ul > li {
+        display: inline-block;
+        position: relative;
+        z-index: 100;
+    }
+
+        .nav > ul > li > a {
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .nav > ul > li a > img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .nav > ul > li > ul {
+            position: absolute;
+            padding-top: 30px !important;
+            padding-bottom: 30px !important;
+            font-weight: 300;
+            left: 0;
+            top: 100%;
+            padding: 0 1000em;
+            /* trick from css-tricks comments */
+            margin: 0 -1000em;
+            /* trick from css-tricks comments */
+            z-index: 101;
+            visibility: hidden;
+            opacity: 0;
+            background: #000;
+            list-style-type: none;
+        }
+
+        .nav > ul > li:hover > ul {
+            visibility: visible;
+            opacity: .7;
+        }
+
+        .nav > ul > li > ul > li {
+            height: 15px;
+            line-height: 15px;
+            margin-bottom: 10px;
+            width: 150px;
+        }
+
+            .nav > ul > li > ul > li > a {
+                font-size: 14px;
+                color: #fff;
+            }
+
+    .desktop-nav {
+        margin-left: 40px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .desktop-nav > ul > li {
+        margin-right: 34px;
+    }
+
+        .desktop-nav > ul > li.last_child {
+            margin-right: 0px;
+        }
+
+    #index_slide {
+        width: 100%;
+        overflow: hidden;
+        background-color: #fafafa;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .navbar-inverse {
+        background-color: #7fc4c6;
+        border: none;
+    }
+    /* Footer Styles */
+    footer {
+        margin: 50px 0;
+    }
+
+    .navbar {
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+
+    .img-portfolio {
+        margin-bottom: 40px;
+    }
+
+    .img-hover:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    .social_icon {
+        margin-bottom: 70px;
+    }
+
+    .col-half-offset {
+        margin-left: 4.166666667%;
+    }
+
+    #story {
+        line-height: 45px;
+        margin-top: 25px;
+    }
+}
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .logo {
+        /*        width: 100px;*/
+    }
+
+    .navbar-inverse {
+        background-color: #fff;
+        border-color: #999;
+    }
+
+    .navbar {
+        position: relative;
+        margin-bottom: 20px;
+        border: 1px solid #f2f2f2;
+    }
+
+    .navbar-header {
+        background-color: #fff;
+    }
+
+    .navbar-toggle {
+        background-color: #006D98;
+        margin: 15px;
+    }
+
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+        border-color: #f2f2f2;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #fff;
+        font-size: 16px;
+    }
+
+        .navbar-inverse .navbar-nav > li > a:hover {
+            color: #808080;
+            background-color: #fff;
+        }
+
+    .img-portfolio {
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fish-footer {
+        margin-bottom: 80px !important;
+    }
+
+    .social_icon {
+        margin-bottom: 70px;
+    }
+
+    .text-center-xs {
+        text-align: center;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+
+    .rwd-bottom {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        background-color: #f2f2f2;
+        height: 80px;
+        z-index: 1000;
+    }
+
+        .rwd-bottom > ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 15px;
+            padding-left: 10px;
+            padding-right: 0px;
+            overflow: hidden;
+        }
+
+            .rwd-bottom > ul > li {
+                width: 33%;
+                height: 50px;
+                line-height: 50px;
+                float: left;
+                display: inline-block;
+                color: #000;
+                text-align: center;
+                border-right: 1px solid #999;
+            }
+
+                .rwd-bottom > ul > li.last_child {
+                    border-right: none;
+                }
+
+                .rwd-bottom > ul > li > a {
+                    color: #000;
+                    text-decoration: none;
+                }
+
+    .product_view {
+        height: 350px;
+        overflow: hidden;
+    }
+
+    .QA_box .comment_input {
+        height: 40px;
+    }
+
+    .QA_box .btn-gray {
+        height: 40px;
+        line-height: 40px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .QA_box_padding {
+        padding-top: 30px;
+        padding: 10px;
+        padding-bottom: 10px;
+    }
+
+    .product_shop_title .m-t-80 {
+        margin-top: 40px;
+    }
+
+    .xs-mb10 {
+        margin-bottom: 10px;
+    }
+
+    .fish-footer {
+        height: 220px !important;
+    }
+
+    .billing {
+        padding-left: 20px !important;
+    }
+
+    .save_b {
+        margin-top: 50px !important;
+    }
+
+    #story-pic {
+        margin-bottom: 15px;
+    }
+}

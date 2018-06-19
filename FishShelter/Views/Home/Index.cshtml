@@ -1,0 +1,64 @@
+﻿@{
+    string pic = "";
+    Dictionary<string, string> roomDic = new Dictionary<string, string>
+    {
+        { "301.jpg","301海景雙人房"},
+        { "302.jpg","302海景雙人浴缸房"},
+        { "303.jpg","303山景四人房"},
+        { "401.jpg","401海景四人浴缸房"},
+        { "402.jpg","402山景四人房"},
+        { "501.jpg","501海景四人浴缸房"}
+    };
+}
+<script src="~/js/index.js"></script>
+<div class="row">
+    <!-- Slder -->
+    <div class="m-b-50 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay" data-tempo="4000">
+        <div class="slides">
+            @for (int i = 1; i <= 5; i++)
+            {
+                {
+                    pic = string.Format("{0}.jpg", @i);
+                }
+                <a href="#slide-1">
+                    <img src="~/img/slider/@pic">
+                </a>
+            }
+        </div>
+    </div>
+    <!-- 品牌精神 -->
+    <div class="col-xs-12 p-0 m-b-50">
+        <div class="col-lg-1 col-md-1 hidden-sm hidden-xs">
+            &ensp;
+        </div>
+        <div class="col-lg-2 col-md-8 col-sm-3 col-xs-12 text-center">
+            <img src="~/img/father.jpg" id="story-pic" class="m-l-15 m-r-15">
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+            <p class="p-l-15 p-r-15" id="story">
+                「民宿主人賴大哥身為在地的基隆人，海洋陪伴著他成長，對他而言海洋是另外一個歸屬。賴大哥決定開民宿，就是想創造一方天地，讓民宿成為媒介，分享最愛的潛水外，也想讓大家發現海洋之美。」
+            </p>
+        </div>
+        <div class="col-lg-1 col-md-1 hidden-sm hidden-xs">
+            &ensp;
+        </div>
+    </div>
+    <!-- 房間 -->
+    <div class="col-xs-12 p-0 m-b-10 p-l-15 p-r-15">
+        @foreach (var room in roomDic)
+            {
+            <div class="col-lg-4 col-xs-12 text-center">
+                <div style="overflow: hidden;position: relative;">
+                    <img src="~/img/room/@room.Key" id="" class="img img-hover room-pic  m-b-20 ">
+                    <div class="room-text">
+                        @room.Value
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+    <div class="col-xs-12 p-l-15 p-r-15">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.0786210433926!2d121.80500231488152!3d25.133032683926135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d4f86cd589d97%3A0xff44534d2316774e!2zMjI05paw5YyX5biC55Ge6Iqz5Y2A5bu65Z-66Lev5LqM5q61MTXomZ8!5e0!3m2!1szh-TW!2stw!4v1529300882562" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>

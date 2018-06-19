@@ -1,0 +1,6 @@
+FishShelter/obj/
+FishShelter/bin/
+packages/
+FishShelter.sln
+FishShelter/ApplicationInsights.config
+.vs/
