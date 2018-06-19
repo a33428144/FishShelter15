@@ -8,7 +8,7 @@
 
 @media(min-width:1200px) {
     .container {
-        width: 1070px;
+        width: 1160px;
     }
     /* Footer Styles */
     footer {
@@ -234,10 +234,6 @@
         margin-right: auto;
     }
 
-    .fish-footer {
-        margin-bottom: 80px !important;
-    }
-
     .social_icon {
         margin-bottom: 70px;
     }
@@ -318,9 +314,13 @@
         margin-bottom: 10px;
     }
 
-    .fish-footer {
-        height: 220px !important;
+    .footer {
+        height: 400px !important;
     }
+
+        .footer ul > li {
+            text-align: left !important;
+        }
 
     .billing {
         padding-left: 20px !important;

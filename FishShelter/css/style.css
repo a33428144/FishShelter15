@@ -3,7 +3,6 @@
 
  */
 
-@import url("shop_design.css");
 @import url("rwd.css");
 @import url("common.css");
 
@@ -14,7 +13,7 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     height: 100%;
-    font-family: Noto Sans,Apple Casual,Corbel,Microsoft JhengHei,sans-serif;
+    font-family: Microsoft JhengHei, sans-serif;
     letter-spacing: 4px;
 }
 
@@ -42,28 +41,53 @@ hr {
     font-size: 12px;
 }
 
-.fish-footer {
-    height: 200px;
+.footer {
+    height: 210px;
     width: 100%;
     padding-top: 30px;
-    background-color: #136382;
+    background-color: #2a728e;
     margin-bottom: 0px;
     margin-top: 0px;
     color: #fff;
     font-size: 14px;
 }
 
-    .fish-footer ul {
+    .footer ul {
         list-style: none;
     }
 
-        .fish-footer ul > li {
-            padding-bottom: 18px;
+    .footer .border-right {
+        border-right: 1px solid #85bbd0;
+    }
+
+    .footer ul > li {
+        padding-bottom: 18px;
+    }
+
+        .footer ul > li > a,
+        .footer ul > li > span {
+            letter-spacing: 2px;
+            color: #fff;
         }
 
-            .fish-footer ul > li > a {
-                color: #fff;
-            }
+        .footer ul > li > .gray {
+            color: #9ac7d8;
+        }
+
+    .footer .fa {
+            text-align: center;
+        color: #fff;
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+        .footer .fa:hover {
+            background-color:#2f80a0;
+            border-radius: 50%;
+            text-decoration:none!important;
+        }
 
 
 /* Home Page Carousel */
@@ -451,9 +475,9 @@ input.form-control {
 }
 
 #story-pic {
-    width: 85%;
+    width: 80%;
     border-radius: 50%;
-    box-shadow: 0px 2px 2px rgba(0,0,0,0.20);
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
 }
 
 .room-text {

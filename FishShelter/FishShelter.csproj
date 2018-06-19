@@ -211,12 +211,10 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\common.css" />
     <Content Include="css\ma5slider.css" />
     <Content Include="css\rwd.css" />
-    <Content Include="css\shop_design.css" />
     <Content Include="css\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -263,7 +261,6 @@
     <Content Include="js\index.js" />
     <Content Include="js\jquery-ui.min.js" />
     <Content Include="js\jquery.js" />
-    <Content Include="js\jquery.min.js" />
     <Content Include="js\jssor.slider.mini.js" />
     <Content Include="js\ma5slider.min.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />

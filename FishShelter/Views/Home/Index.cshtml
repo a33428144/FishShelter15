@@ -9,12 +9,14 @@
         { "402.jpg","402山景四人房"},
         { "501.jpg","501海景四人浴缸房"}
     };
+    int sliderSec = 5000;
 }
 
 <script src="~/js/index.js"></script>
 <div class="row">
     <!-- Slder -->
-    <div class="m-b-50 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay" data-tempo="4000">
+    <div class="m-b-50 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
+          data-tempo="@sliderSec">
         <div class="slides">
             @for (int i = 1; i <= 5; i++)
             {
