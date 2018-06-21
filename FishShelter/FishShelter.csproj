@@ -226,6 +226,32 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\301\1.jpg" />
+    <Content Include="img\301\2.jpg" />
+    <Content Include="img\301\3.jpg" />
+    <Content Include="img\301\4.jpg" />
+    <Content Include="img\301\5.jpg" />
+    <Content Include="img\302\1.jpg" />
+    <Content Include="img\302\2.jpg" />
+    <Content Include="img\302\3.jpg" />
+    <Content Include="img\302\4.jpg" />
+    <Content Include="img\302\5.jpg" />
+    <Content Include="img\303\1.jpg" />
+    <Content Include="img\303\2.jpg" />
+    <Content Include="img\303\3.jpg" />
+    <Content Include="img\303\4.jpg" />
+    <Content Include="img\303\5.jpg" />
+    <Content Include="img\401\1.jpg" />
+    <Content Include="img\401\2.jpg" />
+    <Content Include="img\401\3.jpg" />
+    <Content Include="img\401\4.jpg" />
+    <Content Include="img\401\5.jpg" />
+    <Content Include="img\401\6.jpg" />
+    <Content Include="img\402\1.jpg" />
+    <Content Include="img\402\2.jpg" />
+    <Content Include="img\402\3.jpg" />
+    <Content Include="img\402\4.jpg" />
+    <Content Include="img\402\5.jpg" />
     <Content Include="img\black.png" />
     <Content Include="img\cancel.png" />
     <Content Include="img\collpase.png" />
@@ -367,10 +393,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="img\301\" />
-    <Folder Include="img\302\" />
-    <Folder Include="img\303\" />
-    <Folder Include="img\401\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

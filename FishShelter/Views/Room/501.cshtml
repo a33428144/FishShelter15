@@ -1,1 +1,25 @@
-﻿
+﻿@{
+
+    string pic = "";
+}
+<div class="p-t-40 p-b-40" style="background-color: #F8F8F8;">
+    <div class="container">
+
+        <h4 class="mainArea">客房介紹</h4>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
+             data-tempo="4000">
+            <div class="slides">
+                @for (int i = 1; i <= 7; i++)
+            {
+                {
+                    pic = string.Format("/img/501/{0}.jpg", @i);
+                }
+                    <a href="#slide-1">
+                        <img src="@pic" class="img room-pic">
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+</div>
