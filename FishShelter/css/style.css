@@ -75,7 +75,7 @@ hr {
         }
 
     .footer .fa {
-            text-align: center;
+        text-align: center;
         color: #fff;
         font-size: 20px;
         width: 35px;
@@ -84,9 +84,9 @@ hr {
     }
 
         .footer .fa:hover {
-            background-color:#2f80a0;
+            background-color: #2f80a0;
             border-radius: 50%;
-            text-decoration:none!important;
+            text-decoration: none !important;
         }
 
 
@@ -474,7 +474,6 @@ input.form-control {
 }
 
 #story-pic {
-
     border-radius: 50%;
     box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
 }
@@ -485,11 +484,12 @@ input.form-control {
     bottom: 20px;
     width: 100%;
     padding: 10px;
+    margin: 0px;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
 }
 
 .room-pic {
     width: 100%;
-    border-radius: 4px;
+    border-radius: 2px;
 }
