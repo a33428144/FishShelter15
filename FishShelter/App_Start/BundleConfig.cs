@@ -19,8 +19,7 @@ namespace FishShelter
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/css/bootstrap.min.css",
                       "~/css/style.css",
-                      "~/font-awesome/css/font-awesome.min.css",
-                      
+                      "~/font-awesome/css/font-awesome.min.css",                      
                       "~/css/ma5slider.css"));
 
         }
