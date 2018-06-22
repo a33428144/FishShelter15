@@ -252,6 +252,20 @@
     <Content Include="img\402\3.jpg" />
     <Content Include="img\402\4.jpg" />
     <Content Include="img\402\5.jpg" />
+    <Content Include="img\501\1.jpg" />
+    <Content Include="img\501\2.jpg" />
+    <Content Include="img\501\3.jpg" />
+    <Content Include="img\501\4.jpg" />
+    <Content Include="img\501\5.jpg" />
+    <Content Include="img\501\6.jpg" />
+    <Content Include="img\501\7.jpg" />
+    <Content Include="img\601\1.jpg" />
+    <Content Include="img\601\2.jpg" />
+    <Content Include="img\601\3.jpg" />
+    <Content Include="img\601\4.jpg" />
+    <Content Include="img\601\5.jpg" />
+    <Content Include="img\601\6.jpg" />
+    <Content Include="img\601\7.jpg" />
     <Content Include="img\black.png" />
     <Content Include="img\cancel.png" />
     <Content Include="img\collpase.png" />
@@ -390,6 +404,7 @@
     <Content Include="Views\Room\401.cshtml" />
     <Content Include="Views\Room\402.cshtml" />
     <Content Include="Views\Room\501.cshtml" />
+    <None Include="Views\Room\601.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
