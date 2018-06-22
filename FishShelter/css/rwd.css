@@ -76,9 +76,15 @@
 
         .nav > ul > li > a {
             font-size: 14px;
-            font-weight: bold;
-            color: #fff;
+            font-weight: 500;
+            color: #212121;
+            /*color: #199d9d;*/
         }
+
+            .nav > ul > li > a:hover {
+                bottom: 1.5px;
+                position: relative;
+            }
 
         .nav > ul > li a > img {
             width: 30px;
@@ -105,7 +111,10 @@
 
         .nav > ul > li:hover > ul {
             visibility: visible;
-            opacity: .7;
+            filter: alpha(opacity=70);
+            -moz-opacity: 0.7;
+            -khtml-opacity: 0.7;
+            opacity: 0.7;
         }
 
         .nav > ul > li > ul > li {
@@ -164,7 +173,10 @@
 
     .img-hover:hover {
         cursor: pointer;
-        opacity: 0.7;
+        filter: alpha(opacity=85);
+        -moz-opacity: 0.85;
+        -khtml-opacity: 0.85;
+        opacity: 0.85;
     }
 
     .social_icon {
@@ -183,6 +195,11 @@
     #story-pic {
         width: 75%;
     }
+
+    .room-p-25 {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
 }
 
 @media(max-width:991px) {
@@ -193,9 +210,6 @@
 }
 
 @media(max-width:767px) {
-    .logo {
-        /*        width: 100px;*/
-    }
 
     .navbar-inverse {
         background-color: #fff;

@@ -2,24 +2,50 @@
 
     string pic = "";
 }
-<div class="p-t-40 p-b-40" style="background-color: #F8F8F8;">
+<div class="room p-t-50 p-b-40" style="background-image:url('../img/gray_bg2.jpg');background-size:auto">
     <div class="container">
 
-        <h4 class="mainArea">客房介紹</h4>
+        <div class="room-p-25 col-lg-7 col-md-7 col-sm-12 col-xs-12">
 
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
-             data-tempo="4000">
-            <div class="slides">
-                @for (int i = 1; i <= 5; i++)
+            <div class="ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
+                 data-tempo="5000">
+                <div class="slides">
+                    @for (int i = 1; i <= 5; i++)
             {
                 {
                     pic = string.Format("/img/301/{0}.jpg", @i);
                 }
-                    <a href="#slide-1">
-                        <img src="@pic"  class="img room-pic">
-                    </a>
-                }
+                        <a href="#slide-1">
+                            <img src="@pic" class="img room-pic" style="">
+                        </a>
+                    }
+                </div>
             </div>
+        </div>
+        <div class="room-p-25 col-lg-5 col-md-5 col-sm-12 col-xs-12 ">
+            <h4 class="room-title m-t-10 p-b-20">301海景雙人房</h4>
+            <p class="m-t-20">
+                起床就可以到陽台享受海洋的風景，還有一個超大衛浴，讓你在這享受渡假的時光。
+            </p>
+
+
+            <p class="m-t-20">
+                人數：2人(含早餐)
+                <br />
+                景觀：海景
+                <br />
+                平日：<span class="price">3,400元</span>
+                <br />
+                假日：<span class="price">4,000元</span>
+            </p>
+            @*<ul class="iconSet">
+
+                <li class="clearfix"><a href="tel:08-8611689"><i class="fa fa-phone"></i><b>08-8611689</b></a></li>
+
+                <li class="clearfix"><a href="mailto:happy8611689@gmail.com"><i class="fa fa-envelope"></i><b>happy8611689@gmail.com</b></a></li>
+
+                <li class="clearfix"><a href="https://maps.google.com.tw/?q=22.338412, 120.365725" target="_blank"><i class="fa fa-map-marker"></i><b>929屏東縣琉球鄉中興路33之31號</b></a></li>
+            </ul>*@
         </div>
     </div>
 </div>
