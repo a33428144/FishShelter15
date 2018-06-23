@@ -529,10 +529,10 @@ td .ma5slider {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     color: #fff;
-    filter: alpha(opacity=75);
-    -moz-opacity: 0.75;
-    -khtml-opacity: 0.75;
-    opacity: 0.75;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
 }
 
 @media (max-width: 359px) {
@@ -619,7 +619,7 @@ td .ma5slider {
 
 /* line 70, /var/www/ma-5/ma5slider/app/scss/components/_ma5slider__navs.scss */
 .nav--prev {
-    left: 20px;
+    left: 15px;
 }
 /* line 73, /var/www/ma-5/ma5slider/app/scss/components/_ma5slider__navs.scss */
 .first-slide .nav--prev {
@@ -632,7 +632,7 @@ td .ma5slider {
 
 /* line 78, /var/www/ma-5/ma5slider/app/scss/components/_ma5slider__navs.scss */
 .nav--next {
-    right: 20px;
+    right: 15px;
 }
 /* line 81, /var/www/ma-5/ma5slider/app/scss/components/_ma5slider__navs.scss */
 .last-slide .nav--next {

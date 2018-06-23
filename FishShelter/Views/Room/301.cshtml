@@ -2,12 +2,16 @@
 
     string pic = "";
 }
+
+<script>
+    $(function () {
+        $("#tabs").tabs();
+    });
+</script>
 <div class="room p-t-50 p-b-40" style="background-image:url('../img/gray_bg2.jpg');background-size:auto">
     <div class="container">
-
-        <div class="room-p-25 col-lg-7 col-md-7 col-sm-12 col-xs-12">
-
-            <div class="ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
+        <div class="room-padding col-lg-7 col-md-7 col-sm-12 col-xs-12">
+            <div class="m-b-30 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
                  data-tempo="5000">
                 <div class="slides">
                     @for (int i = 1; i <= 5; i++)
@@ -21,31 +25,95 @@
                     }
                 </div>
             </div>
+            <div id="tabs">
+                <ul>
+                    <li>
+                        <a href="#tabs-1">
+                            房型說明
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-2">
+                            入住須知
+                        </a>
+                    </li>
+                </ul>
+                <div id="tabs-1">
+                    <div>
+                        <p>房間坪數15坪、獨立海景陽台、附早餐</p>
+                        <label class="m-t-10">客房設備</label>
+                        <ul class="p-l-0">
+                            <li>分離式冷、暖氣</li>
+                            <li>高級雙人床組</li>
+                            <li>32吋液晶電視</li>
+                            <li>無線網路Wi-Fi</li>
+                            <li>標準衛浴設備</li>
+                            <li>盥洗用具(刮鬍刀、毛巾、大浴巾、牙刷、牙膏、浴帽、沐浴乳、洗髮乳)</li>
+                            <li>衣架</li>
+                            <li>茶包、咖啡包、礦泉水</li>
+                        </ul>
+                        <label class="m-t-10">公共設施</label>
+                        <ul class="p-l-0">
+                            <li>免費停車場</li>
+                            <li>2樓景觀陽台</li>
+                            <li>獨立客廳</li>
+                            <li>廚房(冰箱、鍋碗瓢盆、瓦斯爐、微波爐、烤箱、咖啡機、油、鹽和胡椒粉)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="tabs-2">
+                    <div>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</div>
+                </div>
+            </div>
         </div>
-        <div class="room-p-25 col-lg-5 col-md-5 col-sm-12 col-xs-12 ">
-            <h4 class="room-title m-t-10 p-b-20">301海景雙人房</h4>
-            <p class="m-t-20">
-                起床就可以到陽台享受海洋的風景，還有一個超大衛浴，讓你在這享受渡假的時光。
-            </p>
+        <div class="room-padding col-lg-5 col-md-5 col-sm-12 col-xs-12 ">
+
+            <h4 class="room-title m-t-10 p-b-20">
+                <i class="fas fa-fish fa-sm"></i>301海景雙人房
+            </h4>
+            <div class="m-t-20">
+                起床就可以到陽台享受海景，配有一個超大衛浴，讓您在這泡澡享受渡假的時光。
+            </div>
 
 
-            <p class="m-t-20">
-                人數：2人(含早餐)
+            <div class="m-t-20">
+                人數：2人
+                <br />
+                樓層：3樓
                 <br />
                 景觀：海景
                 <br />
                 平日：<span class="price">3,400元</span>
                 <br />
                 假日：<span class="price">4,000元</span>
-            </p>
-            @*<ul class="iconSet">
+            </div>
+            <ul class="side_contactInfo m-t-20">
 
-                <li class="clearfix"><a href="tel:08-8611689"><i class="fa fa-phone"></i><b>08-8611689</b></a></li>
-
-                <li class="clearfix"><a href="mailto:happy8611689@gmail.com"><i class="fa fa-envelope"></i><b>happy8611689@gmail.com</b></a></li>
-
-                <li class="clearfix"><a href="https://maps.google.com.tw/?q=22.338412, 120.365725" target="_blank"><i class="fa fa-map-marker"></i><b>929屏東縣琉球鄉中興路33之31號</b></a></li>
-            </ul>*@
+                <li class="clearfix">
+                    <a href="tel:0224977536">
+                        <i class="fas fa-phone fa-lg"></i>
+                        <div class="" style="display:inline;vertical-align: middle;">
+                            (02)2497-7536
+                        </div>
+                    </a>
+                </li>
+                <li class="clearfix">
+                    <a href="http://bit.ly/2IiNo1g" target="_blank">
+                        <i class="fab fa-line" style="font-size:1.6em"></i>
+                        <div class="" style="display:inline;vertical-align: middle;">
+                            @@rcn3729
+                        </div>
+                    </a>
+                </li>
+                <li class="clearfix">
+                    <a href="mailto:xxxxx@yahoo.com.tw" target="_blank">
+                        <i class="fas fa-envelope fa-lg"></i>
+                        <div class="" style="display:inline;vertical-align: middle;">
+                            fish@gmail.com
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

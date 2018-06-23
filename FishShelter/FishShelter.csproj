@@ -217,6 +217,7 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\common.css" />
     <Content Include="css\ma5slider.css" />
+    <Content Include="css\jquery-ui.css" />
     <Content Include="css\rwd.css" />
     <Content Include="css\style.css" />
     <Content Include="favicon.ico" />
@@ -307,7 +308,7 @@
     <Content Include="img\slider\6.jpg" />
     <Content Include="img\youtu.png" />
     <Content Include="js\bootstrap.min.js" />
-    <Content Include="js\index.js" />
+    <Content Include="js\main.js" />
     <Content Include="js\jquery-ui.min.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\jssor.slider.mini.js" />

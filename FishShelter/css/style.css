@@ -1,4 +1,4 @@
-/*!
+﻿/*!
  * 
 
  */
@@ -13,8 +13,9 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     height: 100%;
-    font-family: Arial, 'Noto Sans TC', Microsoft JhengHei, sans-serif!important;
-    letter-spacing: 4px;
+    font-family: Helvetica, Arial, 'Noto Sans TC', Microsoft JhengHei, Heiti TC, sans-serif !important;
+    letter-spacing: 2px;
+    color: #2f2f2f !important;
 }
 
 a {
@@ -52,6 +53,10 @@ hr {
     font-size: 14px;
 }
 
+    .footer i {
+        margin: 0 4px;
+    }
+
     .footer ul {
         list-style: none;
     }
@@ -66,7 +71,6 @@ hr {
 
         .footer ul > li > a,
         .footer ul > li > span {
-            letter-spacing: 2px;
             color: #fff;
         }
 
@@ -478,9 +482,9 @@ input.form-control {
     box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
 }
 
-.room p {
-    line-height: 1.8 !important;
-    font-size: 15px;
+.room div {
+    line-height: 1.8em !important;
+    font-size: 15px !important;
 }
 
 .room h5 {
@@ -489,6 +493,7 @@ input.form-control {
 
 .room .room-pic {
     border: 2px solid #fff;
+    border-radius: 8px;
 }
 
 .room-text {
@@ -512,8 +517,31 @@ input.form-control {
     border-bottom: 1px dashed #b4b4b4;
 }
 
+.room ul {
+    line-height: 2.2em;
+}
+
+    .room ul i {
+        vertical-align: middle;
+        margin-right: 5px;
+        text-align: center;
+        color: #4d4d4d;
+    }
+
 .price {
     color: #339dca;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.fa-fish {
+    margin-right: 8px;
+}
+
+.ui-tabs-panel ul li::before {
+    content: "•";
+    color: #339dca;
+    display: inline-block;
+    width: 12px;
+    margin-left: 10px;
 }

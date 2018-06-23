@@ -8,11 +8,12 @@ namespace FishShelter.Controllers
 {
     public class RoomController : Controller
     {
+        //[Route("room/{id}")]
         public ActionResult Index(string id)
         {
             return View(string.Format("~/Views/Room/{0}.cshtml", id));
         }
 
-      
+
     }
 }
