@@ -38,6 +38,11 @@ namespace FishShelter.Service
                 id = "501",
                 name = "海景四人浴缸房"
             });
+            data.Add(new RoomModels()
+            {
+                id = "601",
+                name = "海景雙人玻璃屋"
+            });
 
             return data;
         }

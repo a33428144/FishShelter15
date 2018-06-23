@@ -25,14 +25,14 @@
         {
             <p>@content</p>
         }
-        @Html.Partial("Common/_RoomFacilities", new List<string> { })
-        @Html.Partial("Common/_PublicFacilities")
-        @Html.Partial("Common/_Additional")
+        @Html.Partial("~/Views/Room/Common/_RoomFacilities.cshtml", new List<string> { })
+        @Html.Partial("~/Views/Room/Common/_PublicFacilities.cshtml")
+        @Html.Partial("~/Views/Room/Common/_Additional.cshtml")
     </div>
     <div id="tabs-2">
-        @Html.Partial("Common/_Notice")
+        @Html.Partial("~/Views/Room/Common/_Notice.cshtml")
     </div>
     <div id="tabs-3">
-        @Html.Partial("Common/_Reservation")
+        @Html.Partial("~/Views/Room/Common/_Reservation.cshtml")
     </div>
 </div>

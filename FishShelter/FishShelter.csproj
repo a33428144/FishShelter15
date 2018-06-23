@@ -406,6 +406,7 @@
     <Content Include="Views\Room\401.cshtml" />
     <Content Include="Views\Room\402.cshtml" />
     <Content Include="Views\Room\501.cshtml" />
+    <Content Include="Views\Home\Notice.cshtml" />
     <None Include="Views\Room\601.cshtml" />
     <Content Include="Views\Room\Common\_PublicFacilities.cshtml" />
     <Content Include="Views\Room\Common\_Notice.cshtml" />
@@ -415,7 +416,8 @@
     <Content Include="Views\Room\Common\_Cancel.cshtml" />
     <Content Include="Views\Room\Common\_Reservation.cshtml" />
     <Content Include="Views\Room\Common\_Tabs.cshtml" />
-    <None Include="Views\Room\Common\_Information.cshtml" />
+    <None Include="Views\Room\Common\_Contact.cshtml" />
+    <Content Include="Views\Home\Room.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
