@@ -1,25 +1,41 @@
 ﻿@{
-
     string pic = "";
 }
-<div class="p-t-40 p-b-40" style="background-color: #F8F8F8;">
+<script src="~/js/room.js"></script>
+<div class="room">
     <div class="container">
-
-        <h4 class="mainArea">客房介紹</h4>
-
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
-             data-tempo="4000">
-            <div class="slides">
-                @for (int i = 1; i <= 5; i++)
-            {
-                {
-                    pic = string.Format("/img/302/{0}.jpg", @i);
-                }
-                    <a href="#slide-1">
-                        <img src="@pic" class="img room-pic">
-                    </a>
-                }
+        <div id="room-area1" class="room-padding col-lg-7 col-md-7 col-sm-12 col-xs-12">
+            <div class="m-b-30 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
+                 data-tempo="4000">
+                <div class="slides">
+                    @for (int i = 1; i <= 7; i++)
+                    {
+                        {
+                            pic = string.Format("/img/302/{0}.jpg", @i);
+                        }
+                        <img src="@pic" class="img room-pic" style="">
+                    }
+                </div>
             </div>
+            @Html.Partial("Common/_Tabs", null, new ViewDataDictionary { { "content", "房間坪數15坪、獨立海景陽台、附早餐" } })
+        </div>
+        <div id="room-area2" class="room-padding col-lg-5 col-md-5 col-sm-12 col-xs-12 m-b-20">
+            <h4 class="room-title m-t-10 p-b-20">
+                <i class="fas fa-fish fa-sm"></i>302海景雙人浴缸房
+            </h4>
+            <div class="m-t-20">
+                起床就可以到陽台享受海景，配有一個超大衛浴，讓您在這享受渡假的時光。
+            </div>
+            <div class="m-t-20">
+                人數：2人
+                <br />
+                景觀：3樓海景
+                <br />
+                平日：<span class="price">3,400元</span>
+                <br />
+                假日：<span class="price">4,000元</span>
+            </div>
+            @Html.Partial("Common/_Information")
         </div>
     </div>
 </div>

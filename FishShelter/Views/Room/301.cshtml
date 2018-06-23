@@ -1,5 +1,4 @@
 ﻿@{
-
     string pic = "";
 }
 <script src="~/js/room.js"></script>
@@ -7,9 +6,9 @@
     <div class="container">
         <div id="room-area1" class="room-padding col-lg-7 col-md-7 col-sm-12 col-xs-12">
             <div class="m-b-30 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
-                 data-tempo="5000">
+                 data-tempo="4000">
                 <div class="slides">
-                    @for (int i = 1; i <= 5; i++)
+                    @for (int i = 1; i <= 7; i++)
                     {
                         {
                             pic = string.Format("/img/301/{0}.jpg", @i);
@@ -21,15 +20,12 @@
             @Html.Partial("Common/_Tabs", null, new ViewDataDictionary { { "content", "房間坪數15坪、獨立海景陽台、附早餐" } })
         </div>
         <div id="room-area2" class="room-padding col-lg-5 col-md-5 col-sm-12 col-xs-12 m-b-20">
-
             <h4 class="room-title m-t-10 p-b-20">
                 <i class="fas fa-fish fa-sm"></i>301海景雙人房
             </h4>
             <div class="m-t-20">
                 起床就可以到陽台享受海景，配有一個超大衛浴，讓您在這享受渡假的時光。
             </div>
-
-
             <div class="m-t-20">
                 人數：2人
                 <br />
@@ -39,33 +35,7 @@
                 <br />
                 假日：<span class="price">4,000元</span>
             </div>
-            <ul class="m-t-20 hidden-sm hidden-xs">
-
-                <li class="clearfix">
-                    <a href="tel:0224977536">
-                        <i class="fas fa-phone fa-lg"></i>
-                        <div class="" style="display:inline;vertical-align: middle;">
-                            (02)2497-7536
-                        </div>
-                    </a>
-                </li>
-                <li class="clearfix">
-                    <a href="http://bit.ly/2yyd4az" target="_blank">
-                        <i class="fab fa-line" style="font-size:1.6em"></i>
-                        <div class="" style="display:inline;vertical-align: middle;">
-                            @@rcn3729
-                        </div>
-                    </a>
-                </li>
-                <li class="clearfix">
-                    <a href="mailto:xxxxx@yahoo.com.tw" target="_blank">
-                        <i class="fas fa-envelope fa-lg"></i>
-                        <div class="" style="display:inline;vertical-align: middle;">
-                            fish@gmail.com
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            @Html.Partial("Common/_Information")
         </div>
     </div>
 </div>
