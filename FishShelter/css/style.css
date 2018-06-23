@@ -469,7 +469,8 @@ input.form-control {
 
 .navbar-brand > img {
     position: absolute;
-    width: 50%;
+    height: 70%;
+    width: auto;
 }
 
 #story {
@@ -482,19 +483,23 @@ input.form-control {
     box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
 }
 
-.room div {
-    line-height: 1.8em !important;
-    font-size: 15px !important;
+.room {
+    background-image: url('../img/gray_bg2.jpg');
 }
 
-.room h5 {
-    line-height: 1.8 !important;
-}
+    .room div {
+        line-height: 1.8em !important;
+        font-size: 15px !important;
+    }
 
-.room .room-pic {
-    border: 2px solid #fff;
-    border-radius: 8px;
-}
+    .room h5 {
+        line-height: 1.8 !important;
+    }
+
+    .room .room-pic {
+        border: 2px solid #fff;
+        border-radius: 8px;
+    }
 
 .room-text {
     text-align: center;
@@ -542,6 +547,6 @@ input.form-control {
     content: "•";
     color: #339dca;
     display: inline-block;
-    width: 12px;
+    width: 15px;
     margin-left: 10px;
 }

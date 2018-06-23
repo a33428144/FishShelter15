@@ -371,7 +371,7 @@
     }
 
         .room-padding {
-        padding-left: 25px !important;
-        padding-right: 25px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
 }

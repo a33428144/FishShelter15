@@ -1,4 +1,4 @@
-$(window).on('load', function () {
+$(function () {
     $('.ma5slider').ma5slider();
     // Methods
 });

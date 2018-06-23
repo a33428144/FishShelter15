@@ -2,15 +2,10 @@
 
     string pic = "";
 }
-
-<script>
-    $(function () {
-        $("#tabs").tabs();
-    });
-</script>
-<div class="room p-t-50 p-b-40" style="background-image:url('../img/gray_bg2.jpg');background-size:auto">
+<script src="~/js/room.js"></script>
+<div class="room p-t-50 p-b-40">
     <div class="container">
-        <div class="room-padding col-lg-7 col-md-7 col-sm-12 col-xs-12">
+        <div id="area1" class="room-padding col-lg-7 col-md-7 col-sm-12 col-xs-12">
             <div class="m-b-30 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
                  data-tempo="5000">
                 <div class="slides">
@@ -43,12 +38,14 @@
                         <p>房間坪數15坪、獨立海景陽台、附早餐</p>
                         <label class="m-t-10">客房設備</label>
                         <ul class="p-l-0">
+                            <li>雙人彈簧床</li>
+                            <li>液晶電視</li>
                             <li>分離式冷、暖氣</li>
-                            <li>高級雙人床組</li>
-                            <li>32吋液晶電視</li>
                             <li>無線網路Wi-Fi</li>
-                            <li>標準衛浴設備</li>
-                            <li>盥洗用具(刮鬍刀、毛巾、大浴巾、牙刷、牙膏、浴帽、沐浴乳、洗髮乳)</li>
+                            <li>衛浴設備</li>
+                            <li>盥洗用品</li>
+                            <li>吹風機</li>
+                            <li>梳妝檯</li>
                             <li>衣架</li>
                             <li>茶包、咖啡包、礦泉水</li>
                         </ul>
@@ -57,7 +54,7 @@
                             <li>免費停車場</li>
                             <li>2樓景觀陽台</li>
                             <li>獨立客廳</li>
-                            <li>廚房(冰箱、鍋碗瓢盆、瓦斯爐、微波爐、烤箱、咖啡機、油、鹽和胡椒粉)</li>
+                            <li>廚房(瓦斯爐、廚具、沙拉油、冰箱、微波爐、烤箱、咖啡機、果醬)</li>
                         </ul>
                     </div>
                 </div>
@@ -66,28 +63,26 @@
                 </div>
             </div>
         </div>
-        <div class="room-padding col-lg-5 col-md-5 col-sm-12 col-xs-12 ">
+        <div id="area2" class="room-padding col-lg-5 col-md-5 col-sm-12 col-xs-12 m-b-20">
 
             <h4 class="room-title m-t-10 p-b-20">
                 <i class="fas fa-fish fa-sm"></i>301海景雙人房
             </h4>
             <div class="m-t-20">
-                起床就可以到陽台享受海景，配有一個超大衛浴，讓您在這泡澡享受渡假的時光。
+                起床就可以到陽台享受海景，配有一個超大衛浴，讓您在這享受渡假的時光。
             </div>
 
 
             <div class="m-t-20">
                 人數：2人
                 <br />
-                樓層：3樓
-                <br />
-                景觀：海景
+                景觀：3樓海景
                 <br />
                 平日：<span class="price">3,400元</span>
                 <br />
                 假日：<span class="price">4,000元</span>
             </div>
-            <ul class="side_contactInfo m-t-20">
+            <ul class="m-t-20 hidden-sm hidden-xs">
 
                 <li class="clearfix">
                     <a href="tel:0224977536">
