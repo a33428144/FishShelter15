@@ -16,7 +16,7 @@ namespace FishShelter
             routes.MapRoute(
                 "Room",
                 "room/{id}",
-                new { controller = "Room", action = "Index" }
+                new { controller = "Room", action = "Detail" }
             );
 
             routes.MapRoute(

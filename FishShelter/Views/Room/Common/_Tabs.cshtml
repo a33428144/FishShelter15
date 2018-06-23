@@ -1,0 +1,35 @@
+﻿@{
+    string content = ViewData["content"] as string;
+}
+
+<div id="tabs">
+    <ul>
+        <li>
+            <a href="#tabs-1">
+                房型說明
+            </a>
+        </li>
+        <li>
+            <a href="#tabs-2">
+                入住須知
+            </a>
+        </li>
+        <li>
+            <a href="#tabs-3">
+                訂房須知
+            </a>
+        </li>
+    </ul>
+    <div id="tabs-1">
+        <p>@content</p>
+        @Html.Partial("Common/_RoomFacilities", new List<string> { })
+        @Html.Partial("Common/_PublicFacilities")
+        @Html.Partial("Common/_Additional")
+    </div>
+    <div id="tabs-2">
+        @Html.Partial("Common/_Notice")
+    </div>
+    <div id="tabs-3">
+        @Html.Partial("Common/_Reservation")
+    </div>
+</div>

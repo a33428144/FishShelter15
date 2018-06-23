@@ -196,6 +196,10 @@
         width: 75%;
     }
 
+    .room {
+        padding: 40px 0;
+    }
+
     .room-padding {
         padding-left: 25px !important;
         padding-right: 25px !important;
@@ -370,7 +374,11 @@
         margin-bottom: 20px;
     }
 
-        .room-padding {
+    .room {
+        padding: 25px 0;
+    }
+
+    .room-padding {
         padding-left: 0px !important;
         padding-right: 0px !important;
     }

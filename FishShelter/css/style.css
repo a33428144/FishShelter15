@@ -18,10 +18,6 @@ body {
     color: #2f2f2f !important;
 }
 
-a {
-    color: #000;
-}
-
 hr {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -540,13 +536,27 @@ input.form-control {
 }
 
 .fa-fish {
-    margin-right: 8px;
+    margin-right: 6px;
 }
 
-.ui-tabs-panel ul li::before {
-    content: "•";
-    color: #339dca;
-    display: inline-block;
-    width: 15px;
-    margin-left: 10px;
+.ui-tabs-panel ul li {
+    position: relative;
+    padding-left: 15px;
+    /*margin-left: 5px;*/
+}
+
+    .ui-tabs-panel ul li::before {
+        position: absolute;
+        content: "";
+        top: 14px;
+        left: 0px;
+        width: 5px;
+        height: 5px;
+        background: #339dca;
+        border-radius: 50%;
+    }
+
+#room-area2 a:focus,
+#room-area2 a:hover {
+    text-decoration: none;
 }

@@ -3,67 +3,24 @@
     string pic = "";
 }
 <script src="~/js/room.js"></script>
-<div class="room p-t-50 p-b-40">
+<div class="room">
     <div class="container">
-        <div id="area1" class="room-padding col-lg-7 col-md-7 col-sm-12 col-xs-12">
+        <div id="room-area1" class="room-padding col-lg-7 col-md-7 col-sm-12 col-xs-12">
             <div class="m-b-30 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
                  data-tempo="5000">
                 <div class="slides">
                     @for (int i = 1; i <= 5; i++)
-            {
-                {
-                    pic = string.Format("/img/301/{0}.jpg", @i);
-                }
-                        <a href="#slide-1">
-                            <img src="@pic" class="img room-pic" style="">
-                        </a>
+                    {
+                        {
+                            pic = string.Format("/img/301/{0}.jpg", @i);
+                        }
+                        <img src="@pic" class="img room-pic" style="">
                     }
                 </div>
             </div>
-            <div id="tabs">
-                <ul>
-                    <li>
-                        <a href="#tabs-1">
-                            房型說明
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#tabs-2">
-                            入住須知
-                        </a>
-                    </li>
-                </ul>
-                <div id="tabs-1">
-                    <div>
-                        <p>房間坪數15坪、獨立海景陽台、附早餐</p>
-                        <label class="m-t-10">客房設備</label>
-                        <ul class="p-l-0">
-                            <li>雙人彈簧床</li>
-                            <li>液晶電視</li>
-                            <li>分離式冷、暖氣</li>
-                            <li>無線網路Wi-Fi</li>
-                            <li>衛浴設備</li>
-                            <li>盥洗用品</li>
-                            <li>吹風機</li>
-                            <li>梳妝檯</li>
-                            <li>衣架</li>
-                            <li>茶包、咖啡包、礦泉水</li>
-                        </ul>
-                        <label class="m-t-10">公共設施</label>
-                        <ul class="p-l-0">
-                            <li>免費停車場</li>
-                            <li>2樓景觀陽台</li>
-                            <li>獨立客廳</li>
-                            <li>廚房(瓦斯爐、廚具、沙拉油、冰箱、微波爐、烤箱、咖啡機、果醬)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="tabs-2">
-                    <div>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</div>
-                </div>
-            </div>
+            @Html.Partial("Common/_Tabs", null, new ViewDataDictionary { { "content", "房間坪數15坪、獨立海景陽台、附早餐" } })
         </div>
-        <div id="area2" class="room-padding col-lg-5 col-md-5 col-sm-12 col-xs-12 m-b-20">
+        <div id="room-area2" class="room-padding col-lg-5 col-md-5 col-sm-12 col-xs-12 m-b-20">
 
             <h4 class="room-title m-t-10 p-b-20">
                 <i class="fas fa-fish fa-sm"></i>301海景雙人房
@@ -93,7 +50,7 @@
                     </a>
                 </li>
                 <li class="clearfix">
-                    <a href="http://bit.ly/2IiNo1g" target="_blank">
+                    <a href="http://bit.ly/2yyd4az" target="_blank">
                         <i class="fab fa-line" style="font-size:1.6em"></i>
                         <div class="" style="display:inline;vertical-align: middle;">
                             @@rcn3729
