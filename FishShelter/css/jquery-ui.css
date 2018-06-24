@@ -978,7 +978,7 @@ button.ui-button::-moz-focus-inner {
 
         .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
             float: left;
-            padding: 3px 12px;
+            padding: 2px 12px;
             text-decoration: none;
         }
 

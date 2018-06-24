@@ -1,10 +1,7 @@
 ﻿@{
     string action = ViewContext.RouteData.Values["action"].ToString().ToLower();
 }
-
 <div class="hidden-xs header">
-
-
     <nav class="navbar navbar-inverse" role="navigation"
          style="background-color:#fff; box-shadow: 1px 1px 1px rgba(0,0,0,0.1)">
         <div class="container">
@@ -20,12 +17,14 @@
                         <a href="#">魚礁故事</a>
                     </li>
                     <li>
-                        <a href="~/home/room" @if (action == "room") { <text>class="active"</text> }>
+                        <a href="~/home/room" @if (action == "room") { <text> class="active" </text>  }>
                             客房介紹
                         </a>
                     </li>
                     <li>
-                        <a href="#">訂房須知</a>
+                        <a href="~/home/notice" @if (action == "notice") { <text> class="active" </text>  }>
+                            訂房須知
+                        </a>
                     </li>
                     <li>
                         <a href="#">交通指引</a>
@@ -34,7 +33,7 @@
                         <a href="#">聯絡我們</a>
                     </li>
                     <li>
-                        <a href="#">線上訂房</a>
+                        <a href="http://bit.ly/2tz3ZrZ" target="_blank">線上訂房</a>
                     </li>
                 </ul>
             </div>
@@ -73,40 +72,23 @@
         <!-- mobile nav -->
         <div class="collapse navbar-collapse hidden-lg hidden-md" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">主題館 <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#">魚礁故事</a>
-                        </li>
-                        <li>
-                            <a href="#">客房介紹</a>
-                        </li>
-                        <li>
-                            <a href="#">訂房須知</a>
-                        </li>
-                        <li>
-                            <a href="#">交通指引</a>
-                        </li>
-                        <li>
-                            <a href="#">聯絡我們</a>
-                        </li>
-                        <li>
-                            <a href="#">線上訂房</a>
-                        </li>
-                    </ul>
+                <li>
+                    <a href="#">- 魚礁故事</a>
                 </li>
                 <li>
-                    <a href="">時尚部落</a>
+                    <a href="~/home/room">- 客房介紹</a>
                 </li>
                 <li>
-                    <a href="">流行新訊</a>
+                    <a href="~/home/notice">- 訂房須知</a>
                 </li>
                 <li>
-                    <a href="">fish TV</a>
+                    <a href="#">- 交通指引</a>
                 </li>
                 <li>
-                    <a href="">MY fish</a>
+                    <a href="#">- 聯絡我們</a>
+                </li>
+                <li>
+                    <a href="http://bit.ly/2tz3ZrZ" target="_blank">- 線上訂房</a>
                 </li>
             </ul>
         </div>

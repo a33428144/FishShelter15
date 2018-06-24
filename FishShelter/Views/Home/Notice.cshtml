@@ -1,38 +1,24 @@
-﻿@{
-    string content = ViewData["content"] as string;
-}
-
-<div id="tabs">
-    <ul>
-        <li>
-            <a href="#tabs-1">
-                房型說明
-            </a>
-        </li>
-        <li>
-            <a href="#tabs-2">
-                入住須知
-            </a>
-        </li>
-        <li>
-            <a href="#tabs-3">
-                訂房須知
-            </a>
-        </li>
-    </ul>
-    <div id="tabs-1">
-        @if (!string.IsNullOrWhiteSpace(content))
-        {
-            <p>@content</p>
-        }
-        @Html.Partial("~/Views/Room/Common/_RoomFacilities.cshtml", new List<string> { })
-        @Html.Partial("~/Views/Room/Common/_PublicFacilities.cshtml")
-        @Html.Partial("~/Views/Room/Common/_Additional.cshtml")
-    </div>
-    <div id="tabs-2">
-        @Html.Partial("~/Views/Room/Common/_Notice.cshtml")
-    </div>
-    <div id="tabs-3">
-        @Html.Partial("~/Views/Room/Common/_Reservation.cshtml")
+﻿
+<div class="container">
+    <div id="tabs" class="room col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12" style="background-image:none">
+        <img src="~/img/book_cup.jpg" class="m-b-40" style="width:100%;border-radius:4px">
+        <ul>
+            <li>
+                <a href="#tabs-2">
+                    入住須知
+                </a>
+            </li>
+            <li>
+                <a href="#tabs-3">
+                    訂房須知
+                </a>
+            </li>
+        </ul>
+        <div id="tabs-2">
+            @Html.Partial("~/Views/Room/Common/_Notice.cshtml")
+        </div>
+        <div id="tabs-3">
+            @Html.Partial("~/Views/Room/Common/_Reservation.cshtml")
+        </div>
     </div>
 </div>

@@ -280,6 +280,7 @@
     <Content Include="img\601\8.jpg" />
     <Content Include="img\601\7.jpg" />
     <Content Include="img\black.png" />
+    <Content Include="img\book_cup.jpg" />
     <Content Include="img\cancel.png" />
     <Content Include="img\collpase.png" />
     <Content Include="img\fb.png" />
@@ -304,7 +305,6 @@
     <Content Include="img\slider\4.jpg" />
     <Content Include="img\slider\5.jpg" />
     <Content Include="img\slider\6.jpg" />
-    <Content Include="img\youtu.png" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\room.js" />
     <Content Include="js\main.js" />
