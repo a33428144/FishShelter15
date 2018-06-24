@@ -1,4 +1,5 @@
 ﻿@{
+    string controller = ViewContext.RouteData.Values["controller"].ToString().ToLower();
     string action = ViewContext.RouteData.Values["action"].ToString().ToLower();
 }
 <div class="hidden-xs header">
@@ -14,22 +15,22 @@
             <div class="nav desktop-nav hidden-xs" style="float: right;">
                 <ul style="margin-bottom: 0px;height: 55px;line-height: 55px;">
                     <li>
-                        <a href="~/home/about" @if (action == "about") { <text> class="active" </text>    }>
+                        <a href="~/home/about" @if (action == "about") { <text> class="active" </text>      }>
                             魚礁故事
                         </a>
                     </li>
                     <li>
-                        <a href="~/home/room" @if (action == "room") { <text> class="active" </text>   }>
+                        <a href="~/home/room" @if (action == "room" || controller == "room") { <text> class="active" </text>    }>
                             客房介紹
                         </a>
                     </li>
                     <li>
-                        <a href="~/home/notice" @if (action == "notice") { <text> class="active" </text>   }>
+                        <a href="~/home/notice" @if (action == "notice") { <text> class="active" </text>     }>
                             訂房須知
                         </a>
                     </li>
                     <li>
-                        <a href="~/home/location" @if (action == "location") { <text> class="active" </text>   }>交通指南</a>
+                        <a href="~/home/location" @if (action == "location") { <text> class="active" </text>     }>交通指南</a>
                     </li>
                     @*<li>
                             <a href="#">聯絡我們</a>
@@ -49,15 +50,19 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="index.html">
-                <img src="~/img/logo.png" style="margin-top:-5px">
-            </a>
+            <div class="col-xs-9">
+                <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="index.html">
+                    <img src="~/img/logo.png">
+                </a>
+            </div>
+            <div class="col-xs-3 p-0 text-right">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
         </div>
         <!-- mobile nav -->
         <div class="collapse navbar-collapse hidden-lg hidden-md" id="bs-example-navbar-collapse-1">

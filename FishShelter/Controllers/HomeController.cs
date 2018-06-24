@@ -9,31 +9,37 @@ namespace FishShelter.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpGet]
         public ActionResult Index()
         {
             return View();
         }
 
+        [HttpGet]
         public ActionResult About()
         {
             return View();
         }
 
+        [HttpGet]
         public ActionResult Room()
         {
             return View();
         }
 
+        [HttpGet]
         public ActionResult Notice()
         {
             return View();
         }
 
-        public ActionResult location()
+        [HttpGet]
+        public ActionResult Location()
         {
             return View();
         }
 
+        [HttpGet]
         public ActionResult Contact()
         {
             return View();
