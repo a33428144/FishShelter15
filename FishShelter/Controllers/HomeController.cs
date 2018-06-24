@@ -34,7 +34,7 @@ namespace FishShelter.Controllers
         }
 
         [HttpGet]
-        public ActionResult Location()
+        public ActionResult Position()
         {
             return View();
         }
