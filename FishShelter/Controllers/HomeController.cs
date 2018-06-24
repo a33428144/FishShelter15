@@ -22,5 +22,10 @@ namespace FishShelter.Controllers
         {
             return View();
         }
+
+        public ActionResult location()
+        {
+            return View();
+        }
     }
 }

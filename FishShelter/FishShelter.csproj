@@ -212,8 +212,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\common.css" />
     <Content Include="css\ma5slider.css" />
@@ -226,7 +224,6 @@
     <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="img\301\1.jpg" />
     <Content Include="img\301\2.jpg" />
     <Content Include="img\301\3.jpg" />
@@ -407,6 +404,7 @@
     <Content Include="Views\Room\402.cshtml" />
     <Content Include="Views\Room\501.cshtml" />
     <Content Include="Views\Home\Notice.cshtml" />
+    <None Include="Views\Home\Location.cshtml" />
     <None Include="Views\Room\601.cshtml" />
     <Content Include="Views\Room\Common\_PublicFacilities.cshtml" />
     <Content Include="Views\Room\Common\_Notice.cshtml" />
