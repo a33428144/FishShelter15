@@ -187,18 +187,19 @@
         margin-left: 4.166666667%;
     }
 
-    #story {
-        line-height: 45px;
+    #about {
+        line-height: 1.8em;
         margin-top: 10px;
     }
 
-    #story-pic {
+    #boss {
         width: 75%;
     }
 
-    .room {
-        padding: 40px 0;
-    }
+    /*.gray-bg {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }*/
 
     .room-padding {
         padding-left: 25px !important;
@@ -354,13 +355,13 @@
         margin-top: 50px !important;
     }
 
-    #story {
+    #about {
         text-align: justify;
         text-justify: distribute-all-lines;
         text-align-last: justify;
     }
 
-        #story:after {
+        #about:after {
             content: ".";
             display: inline-block;
             width: 100%;
@@ -369,14 +370,15 @@
             overflow: hidden;
         }
 
-    #story-pic {
+    #boss {
         width: 45%;
         margin-bottom: 20px;
     }
 
-    .room {
-        padding: 25px 0;
-    }
+    /*.gray-bg {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }*/
 
     .room-padding {
         padding-left: 0px !important;

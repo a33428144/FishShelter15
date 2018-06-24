@@ -41,7 +41,7 @@ hr {
 .header .active {
     font-weight: bold;
     color: #2d8db5;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 .footer {
@@ -469,38 +469,35 @@ input.form-control {
     opacity: 1;
 }
 
-.gray-bg {
-    background-image: url(../img/gray_bg2.jpg);
-}
-
 .navbar-brand > img {
     /*position: absolute;*/
-    height: 10vh;
+    height: 11vh;
     width: auto;
 }
 
-#story {
+#about {
     font-family: FangSong,Microsoft JhengHei !important;
     font-size: 1.6em;
 }
 
-#story-pic {
+#boss {
     border-radius: 50%;
     box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
 }
 
-.room div {
-    line-height: 1.8em !important;
-    font-size: 15px !important;
+.gray-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url(../img/gray_bg2.jpg);
 }
 
-.room h5 {
-    line-height: 1.8 !important;
-}
+    .gray-bg div {
+        line-height: 1.8em !important;
+        font-size: 15px !important;
+    }
 
-.room .room-pic {
-    border: 2px solid #fff;
-    border-radius: 8px;
+.white-border {
+    border: 1px solid #fff;
 }
 
 .room-text {
@@ -524,17 +521,6 @@ input.form-control {
     border-bottom: 1px dashed #b4b4b4;
 }
 
-.room ul {
-    line-height: 2.2em;
-}
-
-    .room ul i {
-        vertical-align: middle;
-        margin-right: 5px;
-        text-align: center;
-        color: #4d4d4d;
-    }
-
 .price {
     color: #339dca;
     font-weight: bold;
@@ -544,6 +530,10 @@ input.form-control {
 .fa-fish {
     margin-right: 6px;
 }
+
+    .fa-fish:before {
+        color: #434343;
+    }
 
 .ui-tabs-panel ul li {
     position: relative;

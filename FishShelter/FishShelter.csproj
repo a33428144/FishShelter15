@@ -276,11 +276,13 @@
     <Content Include="img\601\6.jpg" />
     <Content Include="img\601\8.jpg" />
     <Content Include="img\601\7.jpg" />
+    <Content Include="img\about.jpg" />
     <Content Include="img\black.png" />
     <Content Include="img\book_cup.jpg" />
     <Content Include="img\cancel.png" />
     <Content Include="img\collpase.png" />
     <Content Include="img\fb.png" />
+    <Content Include="img\fish-pic.jpg" />
     <Content Include="img\gray_bg.jpg" />
     <Content Include="img\gray_bg2.jpg" />
     <Content Include="img\header_icon-01.png" />
@@ -371,8 +373,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -404,6 +404,8 @@
     <Content Include="Views\Room\402.cshtml" />
     <Content Include="Views\Room\501.cshtml" />
     <Content Include="Views\Home\Notice.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
     <None Include="Views\Home\Location.cshtml" />
     <None Include="Views\Room\601.cshtml" />
     <Content Include="Views\Room\Common\_PublicFacilities.cshtml" />
