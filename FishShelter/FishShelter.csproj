@@ -406,7 +406,7 @@
     <Content Include="Views\Home\Notice.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <None Include="Views\Home\Position.cshtml" />
+    <Content Include="Views\Home\Position.cshtml" />
     <None Include="Views\Room\601.cshtml" />
     <Content Include="Views\Room\Common\_PublicFacilities.cshtml" />
     <Content Include="Views\Room\Common\_Notice.cshtml" />
