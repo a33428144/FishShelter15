@@ -39,16 +39,16 @@ hr {
 }
 
 .header .active {
-    font-weight: bold;
-    color: #2d8db5;
-    /*text-decoration: underline;*/
+    /*font-weight: bold;*/
+    color: #339dca;
+    text-decoration: underline;
 }
 
 .footer {
     height: 210px;
     width: 100%;
     padding-top: 30px;
-    background-color: #2d8db5;
+    background-color: #339dca;
     margin-bottom: 0px;
     margin-top: 0px;
     color: #fff;
