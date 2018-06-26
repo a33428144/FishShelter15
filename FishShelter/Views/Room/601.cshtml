@@ -1,5 +1,16 @@
-﻿@{
+﻿@using FishShelter.Models
+@{
     string pic = "";
+    RoomDetailModels room = new RoomDetailModels()
+    {
+        photoCount = 8,
+        subTitle = "XXXXXXX，XXXXXX",
+        roomFacilities = new List<string>()
+        {
+            "獨立景觀陽台",
+            "戶外躺椅×2"
+        }
+    };
 }
 <script src="~/js/room.js"></script>
 <div class="gray-bg">
@@ -8,7 +19,7 @@
             <div class="m-b-30 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
                  data-tempo="4000">
                 <div class="slides">
-                    @for (int i = 1; i <= 8; i++)
+                    @for (int i = 1; i <= room.photoCount; i++)
                     {
                         {
                             pic = string.Format("/img/601/{0}.jpg", @i);
@@ -17,7 +28,7 @@
                     }
                 </div>
             </div>
-            @Html.Partial("Common/_Tabs", null, new ViewDataDictionary { { "content", "房間坪數15坪、獨立海景陽台、附早餐" } })
+            @Html.Partial("Common/_Tabs", room)
         </div>
         <div id="room-area2" class="room-padding col-lg-5 col-md-5 col-sm-12 col-xs-12 m-b-20">
             <h4 class="room-title m-t-10 p-b-20">
@@ -36,33 +47,7 @@
                 <br />
                 假日：<span class="price">4,000元</span>
             </div>
-            @*@Html.Partial("~/Views/Room/Common/_Contact.cshtml")*@
-            <ul class="m-t-20 hidden-sm hidden-xs">
-                <li>
-                    <a href="tel:0224977536">
-                        <i class="fas fa-phone fa-lg"></i>
-                        <div style="display:inline;vertical-align: middle;">
-                            (02)2497-7536
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://bit.ly/2yyd4az" target="_blank">
-                        <i class="fab fa-line" style="font-size:1.6em"></i>
-                        <div style="display:inline;vertical-align: top;">
-                            @@rcn3729
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:xxxxx@yahoo.com.tw" target="_blank">
-                        <i class="fas fa-envelope fa-lg"></i>
-                        <div style="display:inline;vertical-align: middle;">
-                            fish@gmail.com
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            @Html.Partial("~/Views/Room/Common/_Contact.cshtml")            
         </div>
     </div>
 </div>

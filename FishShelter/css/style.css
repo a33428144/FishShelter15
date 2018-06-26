@@ -543,7 +543,7 @@ input.form-control {
     .ui-tabs-panel ul li::before {
         position: absolute;
         content: "";
-        top: 14px;
+        top: 10px;
         left: 0px;
         width: 5px;
         height: 5px;

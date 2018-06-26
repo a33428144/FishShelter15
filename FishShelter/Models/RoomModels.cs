@@ -8,4 +8,15 @@ namespace FishShelter.Models
         public string id { get; set; }
         public string name { get; set; }
     }
+
+    public class RoomDetailModels
+    {
+        public RoomDetailModels()
+        {
+            roomFacilities = new List<string>();
+        }
+        public int photoCount { get; set; }
+        public string subTitle { get; set; }
+        public List<string> roomFacilities { get; set; }
+    }
 }
