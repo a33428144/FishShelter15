@@ -366,9 +366,9 @@
     }
 
     #about {
-        text-align: justify;
+        /*text-align: justify;
         text-justify: distribute-all-lines;
-        text-align-last: justify;
+        text-align-last: justify;*/
     }
 
         #about:after {
