@@ -1,6 +1,7 @@
 ﻿@{
     string controller = ViewContext.RouteData.Values["controller"].ToString().ToLower();
     string action = ViewContext.RouteData.Values["action"].ToString().ToLower();
+    string url = Request.Url.AbsoluteUri;
 }
 <div class="hidden-xs header">
     <nav class="navbar navbar-inverse" role="navigation"
@@ -15,26 +16,26 @@
             <div class="nav desktop-nav hidden-xs" style="float: right;">
                 <ul style="margin-bottom: 0px;height: 55px;line-height: 55px;">
                     <li>
-                        <a href="~/home/about" @if (action == "about") { <text> class="active" </text>      }>
+                        <a href="~/home/about" @if (action == "about") { <text> class="active" </text>       }>
                             魚礁故事
                         </a>
                     </li>
                     <li>
-                        <a href="~/home/room" @if (action == "room" || controller == "room") { <text> class="active" </text>    }>
+                        <a href="~/home/room" @if (action == "room" || controller == "room") { <text> class="active" </text>     }>
                             客房介紹
                         </a>
                     </li>
                     <li>
-                        <a href="~/home/notice" @if (action == "notice") { <text> class="active" </text>     }>
+                        <a href="~/home/notice" @if (action == "notice") { <text> class="active" </text>      }>
                             訂房須知
                         </a>
                     </li>
                     <li>
-                        <a href="~/home/Location" @if (action == "location") { <text> class="active" </text>     }>交通指南</a>
+                        <a href="~/home/Location" @if (action == "location") { <text> class="active" </text>      }>交通指南</a>
                     </li>
-                    @*<li>
-                            <a href="#">聯絡我們</a>
-                        </li>*@
+                    <li>
+                        <a href="javascript:void(0)" onclick="$('html, body').scrollTop(99999);" >聯絡我們</a>
+                    </li>
                     <li>
                         <a href="http://bit.ly/2tz3ZrZ" target="_blank">線上訂房</a>
                     </li>
@@ -79,9 +80,9 @@
                 <li>
                     <a href="~/home/Location">- 交通指南</a>
                 </li>
-                @*<li>
-                        <a href="#">- 聯絡我們</a>
-                    </li>*@
+                <li>
+                    <a href="javascript:void(0)" onclick="$('html, body').scrollTop(99999);">聯絡我們</a>
+                    </li>
                 <li>
                     <a href="http://bit.ly/2tz3ZrZ" target="_blank">- 線上訂房</a>
                 </li>
