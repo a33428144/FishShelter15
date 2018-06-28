@@ -6,6 +6,14 @@
 @import url("rwd.css");
 @import url("common.css");
 
+@font-face {
+/*仿宋*/
+  font-family: 'cwTeXFangSong';
+  font-style: normal;
+  src:url(../fonts/cwTeXFangSong-zhonly.woff) format('woff')
+      
+}
+
 /* Global Styles */
 
 html,
@@ -475,8 +483,7 @@ input.form-control {
 }
 
 #about {
-    font-family: FangSong,Microsoft JhengHei !important;
-    font-size: 1.7em;
+    font-family: cwTeXFangSong,Microsoft JhengHei !important;
 }
 
 #boss {

@@ -188,7 +188,7 @@
 
     #about {
         line-height: 1.8em;
-        margin-top: 10px;
+        font-size: 24px;
     }
 
     #boss {
@@ -369,16 +369,18 @@
         /*text-align: justify;
         text-justify: distribute-all-lines;
         text-align-last: justify;*/
+        font-size: 20px;
+        text-align: center;
     }
 
-        #about:after {
+    /*#about:after {
             content: ".";
             display: inline-block;
             width: 100%;
             visibility: hidden;
             height: 0;
             overflow: hidden;
-        }
+        }*/
 
     #boss {
         width: 45%;
