@@ -48,7 +48,7 @@ hr {
 .header .active {
     /*font-weight: bold;*/
     /*border-bottom:1px solid #339dca*/
-    color: #bbb;
+    color: #9a9a9a;
 }
 
 .footer {
@@ -477,7 +477,7 @@ input.form-control {
 }
 
 .navbar-brand > img {
-    width: 90%;
+    width: 80%;
     height: auto;
 }
 
