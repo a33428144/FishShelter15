@@ -281,7 +281,7 @@
     <Content Include="img\book_cup.jpg" />
     <Content Include="img\cancel.png" />
     <Content Include="img\collpase.png" />
-    <Content Include="img\fb.png" />
+    <Content Include="img\fb.jpg" />
     <Content Include="img\fish-pic.jpg" />
     <Content Include="img\gray_bg.jpg" />
     <Content Include="img\gray_bg2.jpg" />
@@ -410,7 +410,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
