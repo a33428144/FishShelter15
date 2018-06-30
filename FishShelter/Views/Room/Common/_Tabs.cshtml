@@ -19,10 +19,10 @@
         </li>
     </ul>
     <div id="tabs-1">
-        @if (!string.IsNullOrWhiteSpace(Model.subTitle))
+        @*@if (!string.IsNullOrWhiteSpace(Model.subTitle))
         {
             <p>@Model.subTitle</p>
-        }
+        }*@
         @Html.Partial("Common/_RoomFacilities", Model.roomFacilities)
         @Html.Partial("Common/_PublicFacilities")
         @Html.Partial("Common/_Additional")

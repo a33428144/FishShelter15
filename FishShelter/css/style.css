@@ -7,11 +7,10 @@
 @import url("common.css");
 
 @font-face {
-/*仿宋*/
-  font-family: 'cwTeXFangSong';
-  font-style: normal;
-  src:url(../fonts/cwTeXFangSong-zhonly.woff) format('woff')
-      
+    /*仿宋*/
+    font-family: 'cwTeXFangSong';
+    font-style: normal;
+    src: url(../fonts/cwTeXFangSong-zhonly.woff) format('woff');
 }
 
 /* Global Styles */
@@ -48,8 +47,8 @@ hr {
 
 .header .active {
     /*font-weight: bold;*/
-    color: #339dca;
-    text-decoration: underline;
+    /*border-bottom:1px solid #339dca*/
+    color: #bbb;
 }
 
 .footer {
@@ -478,7 +477,7 @@ input.form-control {
 }
 
 .navbar-brand > img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
@@ -492,8 +491,8 @@ input.form-control {
 }
 
 .gray-bg {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     background-image: url(../img/gray_bg2.jpg);
 }
 

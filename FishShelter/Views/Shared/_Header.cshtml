@@ -3,6 +3,21 @@
     string action = ViewContext.RouteData.Values["action"].ToString().ToLower();
     string url = Request.Url.AbsoluteUri;
 }
+@*<style>
+    h1 { color: #666;display:inline-block; margin:0;text-transform:uppercase; }
+    h1:after {
+      display:block;
+      content: '';
+      border-bottom: solid 3px #019fb6;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+    h1:hover:after { transform: scaleX(1); }
+    h1.fromRight:after{ transform-origin:100% 50%; }
+    h1.fromLeft:after{  transform-origin:  0% 50%; }
+
+    </style>
+    <h1 class="fromCenter">Expand from left</h1>*@
 <div class="hidden-xs header">
     <nav class="navbar navbar-inverse" role="navigation"
          style="background-color:#fff; box-shadow: 1px 1px 1px rgba(0,0,0,0.15)">
@@ -14,28 +29,28 @@
             </div>
             <!-- Desktop Nav -->
             <div class="nav desktop-nav hidden-xs" style="float: right;">
-                <ul style="margin-bottom: 0px;height: 55px;line-height: 55px;">
+                <ul class="m-b-0" style="padding:20px 0">
                     <li>
-                        <a href="~/home/about" @if (action == "about") { <text> class="active" </text>       }>
+                        <a href="~/home/about" @if (action == "about") { <text> class="active" </text>         }>
                             魚礁故事
                         </a>
                     </li>
                     <li>
-                        <a href="~/home/room" @if (action == "room" || controller == "room") { <text> class="active" </text>     }>
+                        <a href="~/home/room" @if (action == "room" || controller == "room") { <text> class="active" </text>       }>
                             客房介紹
                         </a>
                     </li>
                     <li>
-                        <a href="~/home/notice" @if (action == "notice") { <text> class="active" </text>      }>
+                        <a href="~/home/notice" @if (action == "notice") { <text> class="active" </text>        }>
                             訂房須知
                         </a>
                     </li>
                     <li>
-                        <a href="~/home/Location" @if (action == "location") { <text> class="active" </text>      }>交通指南</a>
+                        <a href="~/home/Location" @if (action == "location") { <text> class="active" </text>        }>交通指南</a>
                     </li>
-                    <li>
-                        <a href="javascript:void(0)" onclick="$('html, body').scrollTop(99999);" >聯絡我們</a>
-                    </li>
+                    @*<li>
+                            <a href="javascript:void(0)" onclick="$('html, body').scrollTop(99999);" >聯絡我們</a>
+                        </li>*@
                     <li>
                         <a href="http://bit.ly/2tz3ZrZ" target="_blank">線上訂房</a>
                     </li>
@@ -47,7 +62,7 @@
     </nav>
 </div>
 
-<nav class="navbar navbar-inverse hidden-lg hidden-md hidden-sm m-b-0" role="navigation" style="background-color: #006D98;">
+<nav class="navbar navbar-inverse hidden-lg hidden-md hidden-sm m-b-0" role="navigation" style="background-color: #339dca;">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -81,8 +96,8 @@
                     <a href="~/home/Location">- 交通指南</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)" onclick="$('html, body').scrollTop(99999);">聯絡我們</a>
-                    </li>
+                    <a href="javascript:void(0)" onclick="$('html, body').scrollTop(99999);">- 聯絡我們</a>
+                </li>
                 <li>
                     <a href="http://bit.ly/2tz3ZrZ" target="_blank">- 線上訂房</a>
                 </li>
