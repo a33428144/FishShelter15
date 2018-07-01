@@ -12,7 +12,7 @@
             <th class="text-center">入住人數</th>
             <th class="text-center">平日</th>
             <th class="text-center">假日</th>
-
+            <th class="text-center">&emsp;</th>
         </tr>
     </thead>
     <tbody>
@@ -24,6 +24,7 @@
                 <td class="text-center">@string.Format("{0}人", @r.people)</td>
                 <td class="text-center">$@r.normalDay.ToString("#,#")</td>
                 <td class="text-center">$@r.holiDay.ToString("#,#")</td>
+                <td class="text-center">&emsp;</td>
             </tr>
         }
     </tbody>
