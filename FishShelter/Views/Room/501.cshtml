@@ -1,4 +1,5 @@
 ﻿@using FishShelter.Models
+@model RoomModels
 @{
     string pic = "";
     RoomDetailModels room = new RoomDetailModels()
@@ -7,8 +8,9 @@
         subTitle = "房間介紹位置，房間介紹位置，房間介紹位置，房間介紹位置，房間介紹位置，房間介紹位置，房間介紹位置，房間介紹位置，房間介紹位置，房間介紹位置，房間介紹位置，房間介紹位置",
         roomFacilities = new List<string>()
         {
-            "大陽台(含高腳椅)",
+            "私人廣場(含高腳椅)",
             "獨立景觀陽台×2",
+            "泡澡浴缸",
             "搖椅",
             "冰箱",
             "梳妝台"
@@ -39,16 +41,16 @@
 
             </h4>
             <div class="m-t-20">
-               @room.subTitle
+                @room.subTitle
             </div>
             <div class="m-t-20 col-xs-6 p-0">
                 人數：4人
                 <br />
                 景觀：5樓海景
                 <br />
-                平日：<span class="price">3,400元</span>
+                平日：<span class="price">@Model.normalDay.ToString("#,#")元</span>
                 <br />
-                假日：<span class="price">4,000元</span>
+                假日：<span class="price">@Model.holiDay.ToString("#,#")元</span>
             </div>
             <div class="col-xs-6 p-0 text-right" style="margin-top:85px">
                 <a href="http://bit.ly/2IFqK3g" class="btn-blue" target="_blank">
@@ -57,25 +59,25 @@
                 </a>
             </div>
             @*<ul class="m-t-20 hidden-sm hidden-xs">
-            <li class="m-b-5">
-                <a href="tel:0224977536">
-                    <i class="fas fa-phone" style="font-size: 1.2em;"></i>
-                    (02)2497-7536
-                </a>
-            </li>
-            <li class="m-b-5">
-                <a href="http://bit.ly/2yyd4az" target="_blank">
-                    <i class="fab fa-line" style="font-size:1.5em"></i>
-                    @@rcn3729
-                </a>
-            </li>
-            <li class="m-b-5">
-                <a href="mailto:service@fishhome15.com" target="_blank">
-                    <i class="fas fa-envelope fa-lg"></i>
-                    service@fishhome15.com
-                </a>
-            </li>
-        </ul>*@
+                    <li class="m-b-5">
+                        <a href="tel:0224977536">
+                            <i class="fas fa-phone" style="font-size: 1.2em;"></i>
+                            (02)2497-7536
+                        </a>
+                    </li>
+                    <li class="m-b-5">
+                        <a href="http://bit.ly/2yyd4az" target="_blank">
+                            <i class="fab fa-line" style="font-size:1.5em"></i>
+                            @@rcn3729
+                        </a>
+                    </li>
+                    <li class="m-b-5">
+                        <a href="mailto:service@fishhome15.com" target="_blank">
+                            <i class="fas fa-envelope fa-lg"></i>
+                            service@fishhome15.com
+                        </a>
+                    </li>
+                </ul>*@
         </div>
     </div>
 </div>

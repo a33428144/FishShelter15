@@ -1,4 +1,5 @@
 ﻿@using FishShelter.Models
+@model RoomModels
 @{
     string pic = "";
     RoomDetailModels room = new RoomDetailModels()
@@ -42,9 +43,9 @@
                 <br />
                 景觀：4樓山景
                 <br />
-                平日：<span class="price">3,600元</span>
+                平日：<span class="price">@Model.normalDay.ToString("#,#")元</span>
                 <br />
-                假日：<span class="price">5,000元</span>
+                假日：<span class="price">@Model.holiDay.ToString("#,#")元</span>
             </div>
             <div class="col-xs-6 p-0 text-right" style="margin-top:85px">
                 <a href="http://bit.ly/2KEs9so" class="btn-blue" target="_blank">

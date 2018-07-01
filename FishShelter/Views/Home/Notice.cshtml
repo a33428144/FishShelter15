@@ -9,21 +9,29 @@
                 <img src="~/img/book_cup.jpg" class="m-b-40" style="width:100%;border-radius:4px">
                 <ul>
                     <li>
-                        <a href="#tabs-2">
+                        <a href="#tabs-1">
                             入住須知
                         </a>
                     </li>
                     <li>
-                        <a href="#tabs-3">
+                        <a href="#tabs-2">
                             訂房須知
                         </a>
                     </li>
+                    <li>
+                        <a href="#tabs-3">
+                            價目表
+                        </a>
+                    </li>
                 </ul>
-                <div id="tabs-2">
+                <div id="tabs-1">
                     @Html.Partial("~/Views/Room/Common/_Notice.cshtml")
                 </div>
-                <div id="tabs-3">
+                <div id="tabs-2">
                     @Html.Partial("~/Views/Room/Common/_Reservation.cshtml")
+                </div>
+                <div id="tabs-3">
+                    @Html.Partial("~/Views/Room/Common/_Price.cshtml")
                 </div>
             </div>
         </div>

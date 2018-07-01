@@ -964,8 +964,8 @@ button.ui-button::-moz-focus-inner {
     }
 
         .ui-tabs .ui-tabs-nav li {
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
             list-style: none;
             float: left;
             position: relative;
@@ -1110,8 +1110,8 @@ works properly when clicked or hovered */
 a.ui-button:active,
 .ui-button:active,
 .ui-button.ui-state-active:hover {
-    border: 1px solid #a8a8a8;
-    background-color: #a8a8a8;
+    border: 1px solid #b0b0b0;
+    background-color: #b0b0b0;
     color: #ffffff;
 }
 

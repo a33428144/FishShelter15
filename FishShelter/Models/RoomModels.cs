@@ -7,6 +7,10 @@ namespace FishShelter.Models
     {
         public string id { get; set; }
         public string name { get; set; }
+        public int people { get; set; }
+        public int floor { get; set; }
+        public int normalDay { get; set; }
+        public int holiDay { get; set; }
     }
 
     public class RoomDetailModels

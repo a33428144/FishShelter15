@@ -401,6 +401,7 @@
     <Content Include="Views\Room\Common\_Tabs.cshtml" />
     <None Include="Views\Room\Common\_Contact.cshtml" />
     <Content Include="Views\Home\Room.cshtml" />
+    <Content Include="Views\Room\Common\_Price.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
