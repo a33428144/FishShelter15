@@ -8,8 +8,8 @@
     <thead>
         <tr>
             <th class="text-center">房型名稱</th>
-            <th class="text-center">樓層</th>
-            <th class="text-center">入住人數</th>
+            <th class="text-center hidden-xs">樓層</th>
+            <th class="text-center hidden-xs">入住人數</th>
             <th class="text-center">平日</th>
             <th class="text-center">假日</th>
             <th class="text-center">&emsp;</th>
@@ -20,8 +20,8 @@
         {
             <tr>
                 <td class="text-center">@r.id@r.name</td>
-                <td class="text-center">@string.Format("{0}樓", @r.floor)</td>
-                <td class="text-center">@string.Format("{0}人", @r.people)</td>
+                <td class="text-center hidden-xs">@string.Format("{0}樓", @r.floor)</td>
+                <td class="text-center hidden-xs">@string.Format("{0}人", @r.people)</td>
                 <td class="text-center">$@r.normalDay.ToString("#,#")</td>
                 <td class="text-center">$@r.holiDay.ToString("#,#")</td>
                 <td class="text-center">&emsp;</td>

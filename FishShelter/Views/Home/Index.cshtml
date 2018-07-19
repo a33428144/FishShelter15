@@ -5,8 +5,11 @@
     RoomService RoomService = new RoomService();
     List<RoomModels> rooms = RoomService.GetData();
 }
+<style>
 
+</style>
 <div class="row">
+
     <!-- Slder -->
     <div class="m-b-0 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
          data-tempo="5000" style="background-image:url(../img/gray_bg.jpg);background-size: cover;">
@@ -40,7 +43,7 @@
         </div>
     </div>
     <!-- 房間 -->
-    <div class="col-xs-12 p-0 p-l-15 p-r-15" style="background-image:url(../img/gray_bg.jpg);background-size: cover;">
+    <div class="col-xs-12 p-0 p-l-15 p-r-15 animated fadeInUp" style="background-image:url(../img/gray_bg.jpg);background-size: cover;">
         @foreach (var r in rooms)
         {
             pic = string.Format("/img/room/{0}.jpg", r.id);
@@ -56,7 +59,7 @@
             </div>
         }
     </div>
-    <div class="col-xs-12 p-l-15 p-r-15">
+    <div class="col-xs-12 p-l-15 p-r-15 animated fadeInUp">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.0786210433926!2d121.80500231488152!3d25.133032683926135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d4f86cd589d97%3A0xff44534d2316774e!2zMjI05paw5YyX5biC55Ge6Iqz5Y2A5bu65Z-66Lev5LqM5q61MTXomZ8!5e0!3m2!1szh-TW!2stw!4v1529300882562" width="100%" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 </div>
