@@ -4,7 +4,6 @@
     string pic = "";
     RoomDetailModels room = new RoomDetailModels()
     {
-        photoCount = 7,
         // subTitle = "早上一睜開眼，蔚藍大海便能盡收眼底，讓這片海開啟您的一天。房內有寬敞的陽台，在寧靜的午後買杯咖啡，坐在陽台便能感受海風徐徐輕拂，和聽見輕柔的浪濤聲，享受悠閒恬靜的渡假時光。",
         subTitle = "房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案",
         roomFacilities = new List<string>()
@@ -23,7 +22,7 @@
                  data-tempo="4000">
                 <div class="slides">
                     說
-                    @for (int i = 1; i <= room.photoCount; i++)
+                    @for (int i = 1; i <= Model.photoCount; i++)
                     {
                         {
                             pic = string.Format("/img/301/{0}.jpg", @i);
@@ -39,7 +38,7 @@
                 <i class="fas fa-fish fa-sm"></i>301海景雙人房
             </h4>
             <div class="m-t-20">
-                @room.subTitle
+                @*@room.subTitle*@
             </div>
             <div class="m-t-20 col-xs-6 p-0">
                 人數：2人

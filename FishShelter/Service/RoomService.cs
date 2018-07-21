@@ -14,6 +14,7 @@ namespace FishShelter.Service
                 name = "海景雙人房",
                 people = 2,
                 floor = 3,
+                photoCount = 7,
                 normalDay = 3400,
                 holiDay = 4000
             });
@@ -23,6 +24,7 @@ namespace FishShelter.Service
                 name = "海景雙人浴缸房",
                 people = 2,
                 floor = 3,
+                photoCount = 7,
                 normalDay = 3400,
                 holiDay = 4000
             });
@@ -32,6 +34,7 @@ namespace FishShelter.Service
                 name = "山景四人房",
                 people = 4,
                 floor = 3,
+                photoCount = 7,
                 normalDay = 3200,
                 holiDay = 4200
             });
@@ -41,6 +44,7 @@ namespace FishShelter.Service
                 name = "海景四人浴缸房",
                 people = 4,
                 floor = 4,
+                photoCount = 8,
                 normalDay = 3600,
                 holiDay = 5000
             });
@@ -50,6 +54,7 @@ namespace FishShelter.Service
                 name = "山景四人房",
                 people = 4,
                 floor = 4,
+                photoCount = 7,
                 normalDay = 3600,
                 holiDay = 4600
             });
@@ -59,6 +64,7 @@ namespace FishShelter.Service
                 name = "海景四人浴缸房",
                 people = 4,
                 floor = 5,
+                photoCount = 8,
                 normalDay = 5000,
                 holiDay = 6000
             });
@@ -68,6 +74,7 @@ namespace FishShelter.Service
                 name = "海景雙人玻璃屋",
                 people = 2,
                 floor = 6,
+                photoCount = 8,
                 normalDay = 3200,
                 holiDay = 4000
             });
