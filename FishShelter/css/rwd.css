@@ -390,7 +390,7 @@
         /*text-align: justify;
         text-justify: distribute-all-lines;
         text-align-last: justify;*/
-        font-size: 20px;
+        font-size: 22px;
         text-align: center;
     }
 
@@ -404,8 +404,8 @@
         }*/
 
     #boss {
-        width: 45%;
-        margin-bottom: 20px;
+        width: 50%;
+        margin-bottom: 10px;
     }
 
     /*.gray-bg {
