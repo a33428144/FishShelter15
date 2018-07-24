@@ -5,10 +5,14 @@
     RoomService RoomService = new RoomService();
     List<RoomModels> rooms = RoomService.GetData();
 }
+<style>
+
+</style>
 <div class="row">
+
     <!-- Slder -->
     <div class="m-b-0 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
-         data-tempo="5000"  style="background-image:url(../img/gray_bg.jpg);background-size: cover;">
+         data-tempo="5000" style="background-image:url(../img/gray_bg.jpg);background-size: cover;">
         <div class="slides">
             @for (int i = 1; i <= 6; i++)
             {
@@ -16,7 +20,7 @@
                     pic = string.Format("{0}.jpg", @i);
                 }
                 <a href="#slide-1">
-                    <img src="~/img/slider/@pic">
+                    <img src="~/img/slider/@pic" alt="基隆民宿">
                 </a>
             }
         </div>
@@ -30,8 +34,8 @@
             <img src="~/img/father.jpg" id="boss" class="m-l-15 m-r-15">
         </div>
         <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
-            <p class="p-l-15 p-r-15" id="about">
-                「民宿主人賴大哥身為在地的基隆人，海洋陪伴著他成長，對他而言海洋是另外一個歸屬。賴大哥決定開民宿，就是想創造一方天地，讓民宿成為媒介，分享最愛的潛水外，也想讓大家發現海洋的美。」
+            <p class="p-l-15 p-r-15 m-t-20 m-b-0" id="about">
+                「民宿主人賴大哥，身為在地的基隆人，海洋陪伴著他成長，對他而言海洋是另外一個歸屬。當賴大哥決定開民宿，就是想創造一方天地，讓民宿成為媒介分享他最愛的潛水外，也想讓大家發現海洋之美！」
             </p>
         </div>
         <div class="col-lg-1 col-md-1 hidden-sm hidden-xs">
@@ -39,14 +43,14 @@
         </div>
     </div>
     <!-- 房間 -->
-    <div class="col-xs-12 p-0 m-b-10 p-l-15 p-r-15">
+    <div class="col-xs-12 p-0 p-l-15 p-r-15 animated fadeInUp" style="background-image:url(../img/gray_bg.jpg);background-size: cover;">
         @foreach (var r in rooms)
         {
             pic = string.Format("/img/room/{0}.jpg", r.id);
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
                 <div style="overflow: hidden;position: relative;">
-                    <a href="~/room/detail?id=@r.id">
-                        <img src="@pic" alt="@r.id@r.name" class="img-hover room-pic m-b-30">
+                    <a href="~/room/index?id=@r.id">
+                        <img src="@pic" alt="@r.id@r.name" class="img-hover room-pic m-b-30" alt="基隆民宿">
                         <p class="room-text">
                             @r.id@r.name
                         </p>
@@ -55,7 +59,7 @@
             </div>
         }
     </div>
-    <div class="col-xs-12 p-l-15 p-r-15">
+    <div class="col-xs-12 p-l-15 p-r-15 animated fadeInUp">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.0786210433926!2d121.80500231488152!3d25.133032683926135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d4f86cd589d97%3A0xff44534d2316774e!2zMjI05paw5YyX5biC55Ge6Iqz5Y2A5bu65Z-66Lev5LqM5q61MTXomZ8!5e0!3m2!1szh-TW!2stw!4v1529300882562" width="100%" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 </div>

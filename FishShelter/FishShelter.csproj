@@ -212,11 +212,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BingSiteAuth.xml" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\common.css" />
     <Content Include="css\ma5slider.css" />
     <Content Include="css\jquery-ui.css" />
     <Content Include="css\rwd.css" />
+    <Content Include="css\animate.css" />
     <Content Include="css\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="font-awesome\css\font-awesome.css" />
@@ -224,6 +226,7 @@
     <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="google9f6e5684f8002f41.html" />
     <Content Include="img\301\1.jpg" />
     <Content Include="img\301\2.jpg" />
     <Content Include="img\301\3.jpg" />
@@ -276,19 +279,17 @@
     <Content Include="img\601\6.jpg" />
     <Content Include="img\601\8.jpg" />
     <Content Include="img\601\7.jpg" />
-    <Content Include="img\about.jpg" />
+    <Content Include="img\about\3.jpg" />
+    <Content Include="img\about\1.jpg" />
     <Content Include="img\black.png" />
     <Content Include="img\book_cup.jpg" />
     <Content Include="img\cancel.png" />
     <Content Include="img\collpase.png" />
-    <Content Include="img\fb.png" />
-    <Content Include="img\fish-pic.jpg" />
+    <Content Include="img\favicon.png" />
+    <Content Include="img\fb.jpg" />
+    <Content Include="img\about\2.jpg" />
     <Content Include="img\gray_bg.jpg" />
     <Content Include="img\gray_bg2.jpg" />
-    <Content Include="img\header_icon-01.png" />
-    <Content Include="img\header_icon-02.png" />
-    <Content Include="img\loading.gif" />
-    <Content Include="img\favicon.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\room\301.jpg" />
     <Content Include="img\room\302.jpg" />
@@ -349,6 +350,7 @@
     <Content Include="font-awesome\fonts\fontawesome-webfont.ttf" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.woff" />
     <Content Include="font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="fonts\cwTeXFangSong-zhonly.woff" />
     <None Include="Properties\PublishProfiles\fishhome15 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -362,6 +364,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="sitemap.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -371,29 +374,8 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\ConfirmEmail.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ForgotPassword.cshtml" />
-    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ResetPassword.cshtml" />
-    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\SendCode.cshtml" />
-    <Content Include="Views\Account\VerifyCode.cshtml" />
-    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
-    <Content Include="Views\Manage\ChangePassword.cshtml" />
-    <Content Include="Views\Manage\Index.cshtml" />
-    <Content Include="Views\Manage\ManageLogins.cshtml" />
-    <Content Include="Views\Manage\SetPassword.cshtml" />
-    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
-    <Content Include="Views\Shared\Lockout.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
@@ -406,7 +388,8 @@
     <Content Include="Views\Home\Notice.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <None Include="Views\Home\Position.cshtml" />
+    <Content Include="Views\Home\Location.cshtml" />
+    <Content Include="Views\Room\Index.cshtml" />
     <None Include="Views\Room\601.cshtml" />
     <Content Include="Views\Room\Common\_PublicFacilities.cshtml" />
     <Content Include="Views\Room\Common\_Notice.cshtml" />
@@ -418,6 +401,7 @@
     <Content Include="Views\Room\Common\_Tabs.cshtml" />
     <None Include="Views\Room\Common\_Contact.cshtml" />
     <Content Include="Views\Home\Room.cshtml" />
+    <Content Include="Views\Room\Common\_Price.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -427,7 +411,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>

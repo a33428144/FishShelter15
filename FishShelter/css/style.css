@@ -6,6 +6,13 @@
 @import url("rwd.css");
 @import url("common.css");
 
+@font-face {
+    /*仿宋*/
+    font-family: 'cwTeXFangSong';
+    font-style: normal;
+    src: url(../fonts/cwTeXFangSong-zhonly.woff) format('woff');
+}
+
 /* Global Styles */
 
 html,
@@ -39,16 +46,16 @@ hr {
 }
 
 .header .active {
-    font-weight: bold;
-    color: #2d8db5;
-    /*text-decoration: underline;*/
+    /*font-weight: bold;*/
+    /*border-bottom:1px solid #339dca*/
+    /*color: #9a9a9a;*/
 }
 
 .footer {
     height: 210px;
     width: 100%;
     padding-top: 30px;
-    background-color: #2d8db5;
+    background-color: #339dca;
     margin-bottom: 0px;
     margin-top: 0px;
     color: #fff;
@@ -158,6 +165,30 @@ header.carousel {
         border-color: #db6653;
         opacity: .9;
     }
+
+.btn-blue {
+    padding: 14px;
+    border-radius: 5px;
+    background-color: #339dca;
+    color: #fff;
+    /*box-shadow: inset 0 -2px 0 0 #2b85ab;*/
+    border-color: transparent;
+}
+
+    .btn-blue:hover,
+    .btn-blue:focus,
+    .btn-blue:visited {
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.8;
+        -khtml-opacity: 0.8;
+        opacity:0.8;
+        color: #fff !important;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
 
 .current_page {
     color: #db6653 !important;
@@ -470,13 +501,12 @@ input.form-control {
 }
 
 .navbar-brand > img {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
 #about {
-    font-family: FangSong,Microsoft JhengHei !important;
-    font-size: 1.6em;
+    font-family: cwTeXFangSong,Microsoft JhengHei !important;
 }
 
 #boss {
@@ -485,8 +515,8 @@ input.form-control {
 }
 
 .gray-bg {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     background-image: url(../img/gray_bg2.jpg);
 }
 
@@ -521,7 +551,7 @@ input.form-control {
 }
 
 .price {
-    color: #339dca;
+    color: #009c9c;
     font-weight: bold;
     font-size: 18px;
 }
@@ -534,6 +564,11 @@ input.form-control {
         color: #434343;
     }
 
+.navbar .fa-fish:before,
+.footer .fa-fish:before {
+    color: #fff;
+}
+
 .ui-tabs-panel ul li {
     position: relative;
     padding-left: 15px;
@@ -543,7 +578,7 @@ input.form-control {
     .ui-tabs-panel ul li::before {
         position: absolute;
         content: "";
-        top: 14px;
+        top: 10px;
         left: 0px;
         width: 5px;
         height: 5px;

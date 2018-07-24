@@ -10,16 +10,18 @@ namespace FishShelter
         {
             //強制啟用打包及最佳化
             BundleTable.EnableOptimizations = true;
+
             bundles.Add(new ScriptBundle("~/bundles/js").Include(
                         "~/js/jquery.js",
                         "~/js/jquery-ui.min.js",
                         "~/js/bootstrap.min.js",
-                        "~/js/ma5slider.min.js"));
+                        "~/js/ma5slider.min.js",
+                        "~/js/main.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/css/jquery-ui.css",
                       "~/css/bootstrap.min.css",
-                      "~/css/style.css",
-                      "~/font-awesome/css/font-awesome.min.css",                      
+                      "~/css/style.css",                
                       "~/css/ma5slider.css"));
 
         }

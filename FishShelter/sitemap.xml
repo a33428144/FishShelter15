@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://www.fishhome15.com/</loc>
+  <lastmod>2018-07-21T07:29:19+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.fishhome15.com/home/index</loc>
+  <lastmod>2018-07-21T07:29:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fishhome15.com/home/about</loc>
+  <lastmod>2018-07-21T07:29:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fishhome15.com/home/room</loc>
+  <lastmod>2018-07-21T07:29:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fishhome15.com/home/notice</loc>
+  <lastmod>2018-07-21T07:29:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fishhome15.com/home/Location</loc>
+  <lastmod>2018-07-21T07:29:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fishhome15.com/room/detail?id=301</loc>
+  <lastmod>2018-07-21T07:29:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fishhome15.com/room/detail?id=302</loc>
+  <lastmod>2018-07-21T07:29:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fishhome15.com/room/detail?id=303</loc>
+  <lastmod>2018-07-21T07:29:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fishhome15.com/room/detail?id=401</loc>
+  <lastmod>2018-07-21T07:29:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fishhome15.com/room/detail?id=402</loc>
+  <lastmod>2018-07-21T07:29:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fishhome15.com/room/detail?id=501</loc>
+  <lastmod>2018-07-21T07:29:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fishhome15.com/room/detail?id=601</loc>
+  <lastmod>2018-07-21T07:29:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

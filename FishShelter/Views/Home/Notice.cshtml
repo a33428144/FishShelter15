@@ -1,7 +1,7 @@
 ﻿
 <div class="gray-bg">
     <div class="container">
-        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 p-0">
             <h3 class="m-t-0 m-b-30 text-center">
                 <i class="fas fa-fish fa-sm"></i>訂房須知
             </h3>
@@ -9,21 +9,29 @@
                 <img src="~/img/book_cup.jpg" class="m-b-40" style="width:100%;border-radius:4px">
                 <ul>
                     <li>
-                        <a href="#tabs-2">
+                        <a href="#tabs-1">
                             入住須知
                         </a>
                     </li>
                     <li>
-                        <a href="#tabs-3">
+                        <a href="#tabs-2">
                             訂房須知
                         </a>
                     </li>
+                    <li>
+                        <a href="#tabs-3">
+                            價目表
+                        </a>
+                    </li>
                 </ul>
-                <div id="tabs-2">
+                <div id="tabs-1">
                     @Html.Partial("~/Views/Room/Common/_Notice.cshtml")
                 </div>
-                <div id="tabs-3">
+                <div id="tabs-2">
                     @Html.Partial("~/Views/Room/Common/_Reservation.cshtml")
+                </div>
+                <div id="tabs-3" class="p-l-0">
+                    @Html.Partial("~/Views/Room/Common/_Price.cshtml")
                 </div>
             </div>
         </div>

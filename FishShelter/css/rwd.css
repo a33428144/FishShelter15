@@ -76,15 +76,30 @@
 
         .nav > ul > li > a {
             font-size: 14px;
-            font-weight: 500;
-            color: #4d4d4d;
-            /*color: #199d9d;*/
+            font-weight: bold;
+            text-decoration: none !important;
+            color: #339dca;
         }
 
             .nav > ul > li > a:hover {
-                bottom: 1.5px;
+                bottom: 2px;
                 position: relative;
             }
+
+            .nav > ul > li > a:after {
+                display: block;
+                content: '';
+                border-bottom: solid 1px #339dca;
+                transform: scaleX(0);
+                transition: transform 300ms ease-in-out;
+            }
+
+            .nav > ul > li > a:hover:after {
+                transform: scaleX(1);
+                /*transform-origin: 0% 50%;*/
+            }
+
+
 
         .nav > ul > li a > img {
             width: 30px;
@@ -189,7 +204,7 @@
 
     #about {
         line-height: 1.8em;
-        margin-top: 10px;
+        font-size: 24px;
     }
 
     #boss {
@@ -244,9 +259,10 @@
     }
 
     .navbar-toggle {
-        background-color: #2a728e;
-        margin-top: 15px;
+        background-color: #bbb;
+        margin-top: 10px;
         margin-right: 15px;
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     }
 
     .navbar-inverse .navbar-collapse,
@@ -354,9 +370,13 @@
         height: 400px !important;
     }
 
-        .footer ul > li {
-            text-align: left !important;
+        .footer ul {
+            padding-left: 20px;
         }
+
+            .footer ul > li {
+                text-align: left !important;
+            }
 
     .billing {
         padding-left: 20px !important;
@@ -367,23 +387,25 @@
     }
 
     #about {
-        text-align: justify;
+        /*text-align: justify;
         text-justify: distribute-all-lines;
-        text-align-last: justify;
+        text-align-last: justify;*/
+        font-size: 22px;
+        text-align: center;
     }
 
-        #about:after {
+    /*#about:after {
             content: ".";
             display: inline-block;
             width: 100%;
             visibility: hidden;
             height: 0;
             overflow: hidden;
-        }
+        }*/
 
     #boss {
-        width: 45%;
-        margin-bottom: 20px;
+        width: 50%;
+        margin-bottom: 10px;
     }
 
     /*.gray-bg {

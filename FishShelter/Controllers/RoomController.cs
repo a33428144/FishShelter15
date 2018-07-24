@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FishShelter.Models;
+using FishShelter.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,14 +10,16 @@ namespace FishShelter.Controllers
 {
     public class RoomController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(string id)
         {
-            return View();
+            RoomService RoomService = new RoomService();
+            return View(RoomService.GetData().First(f => f.id == id));
         }
 
         public ActionResult Detail(string id)
         {
-            return View(string.Format("~/Views/Room/{0}.cshtml", id));
+            RoomService RoomService = new RoomService();
+            return View(string.Format("~/Views/Room/{0}.cshtml", id), RoomService.GetData().First(f => f.id == id));
         }
     }
 }
