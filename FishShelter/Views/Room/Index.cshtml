@@ -2,17 +2,6 @@
 @model RoomModels
 @{
     string pic = "";
-    RoomDetailModels room = new RoomDetailModels()
-    {
-        // subTitle = "早上一睜開眼，蔚藍大海便能盡收眼底，讓這片海開啟您的一天。房內有寬敞的陽台，在寧靜的午後買杯咖啡，坐在陽台便能感受海風徐徐輕拂，和聽見輕柔的浪濤聲，享受悠閒恬靜的渡假時光。",
-        subTitle = "房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案，房間文案",
-        roomFacilities = new List<string>()
-        {
-            "獨立景觀陽台",
-            "戶外桌椅",
-            "梳妝台"
-        }
-    };
 }
 <script src="~/js/room.js"></script>
 <div class="gray-bg">
@@ -30,19 +19,19 @@
                     }
                 </div>
             </div>
-            @Html.Partial("Common/_Tabs", room)
+            @Html.Partial("Common/_Tabs", Model)
         </div>
         <div id="room-area2" class="room-padding col-lg-5 col-md-5 col-sm-12 col-xs-12 m-b-20">
             <h4 class="room-title m-t-10 p-b-20">
-                <i class="fas fa-fish fa-sm"></i>301海景雙人房
+                <i class="fas fa-fish fa-sm"></i>@Model.id@Model.name
             </h4>
             <div class="m-t-20">
-                @*@room.subTitle*@
+                @Model.description
             </div>
             <div class="m-t-20 col-xs-6 p-0">
-                人數：2人
+                人數：@string.Format("{0}人",@Model.people)
                 <br />
-                景觀：3樓海景
+                景觀：@string.Format("{0}樓{1}",@Model.floor, Model.view)
                 <br />
                 平日：<span class="price">@Model.normalDay.ToString("#,#")元</span>
                 <br />

@@ -389,6 +389,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Location.cshtml" />
+    <Content Include="Views\Room\Index.cshtml" />
     <None Include="Views\Room\601.cshtml" />
     <Content Include="Views\Room\Common\_PublicFacilities.cshtml" />
     <Content Include="Views\Room\Common\_Notice.cshtml" />
