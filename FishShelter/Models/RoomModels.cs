@@ -18,6 +18,7 @@ namespace FishShelter.Models
         public int photoCount { get; set; }
         public int normalDay { get; set; }
         public int holiDay { get; set; }
+        public string url { get; set; }
         public List<string> roomFacilities { get; set; }
     }
 

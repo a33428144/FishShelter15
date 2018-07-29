@@ -19,6 +19,7 @@ namespace FishShelter.Service
                 photoCount = 7,
                 normalDay = 3400,
                 holiDay = 4000,
+                url = "http://bit.ly/2KzfkQc",
                 roomFacilities = new List<string>()
                 {
                     "獨立景觀陽台",
@@ -37,6 +38,7 @@ namespace FishShelter.Service
                 photoCount = 7,
                 normalDay = 3400,
                 holiDay = 4000,
+                url = "http://bit.ly/2lOyp65",
                 roomFacilities = new List<string>()
                 {
                     "獨立景觀陽台",
@@ -55,6 +57,7 @@ namespace FishShelter.Service
                 photoCount = 7,
                 normalDay = 3200,
                 holiDay = 4200,
+                url = "http://bit.ly/2tIr1Oe",
                 roomFacilities = new List<string>()
                 {
                     "木質桌椅"
@@ -71,6 +74,7 @@ namespace FishShelter.Service
                 photoCount = 8,
                 normalDay = 3600,
                 holiDay = 5000,
+                url = "http://bit.ly/2tHvcKd",
                 roomFacilities = new List<string>()
                 {
                     "獨立景觀陽台×2",
@@ -89,6 +93,7 @@ namespace FishShelter.Service
                 photoCount = 7,
                 normalDay = 3600,
                 holiDay = 4600,
+                url = "http://bit.ly/2KEs9so",
                 roomFacilities = new List<string>()
                 {
                     "獨立景觀陽台",
@@ -106,6 +111,7 @@ namespace FishShelter.Service
                 photoCount = 8,
                 normalDay = 5000,
                 holiDay = 6000,
+                url = "http://bit.ly/2IFqK3g",
                 roomFacilities = new List<string>()
                 {
                     "私人廣場(含高腳椅)",
@@ -127,6 +133,7 @@ namespace FishShelter.Service
                 photoCount = 8,
                 normalDay = 3200,
                 holiDay = 4000,
+                url = "http://bit.ly/2IFDW84",
                 roomFacilities = new List<string>()
                 {
                     "獨立景觀陽台",
