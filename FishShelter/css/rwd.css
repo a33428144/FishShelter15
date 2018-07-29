@@ -371,7 +371,7 @@
     }
 
         .footer ul {
-            padding-left: 20px;
+            padding-left: 0px;
         }
 
             .footer ul > li {
@@ -394,27 +394,17 @@
         text-align: center;
     }
 
-    /*#about:after {
-            content: ".";
-            display: inline-block;
-            width: 100%;
-            visibility: hidden;
-            height: 0;
-            overflow: hidden;
-        }*/
-
     #boss {
         width: 50%;
         margin-bottom: 10px;
     }
 
-    /*.gray-bg {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }*/
-
     .room-padding {
         padding-left: 0px !important;
         padding-right: 0px !important;
+    }
+
+    .footer .border-right {
+        border-right: transparent !important;
     }
 }

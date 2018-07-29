@@ -233,7 +233,7 @@
       <publishTime>06/24/2018 23:50:14</publishTime>
     </File>
     <File Include="css/rwd.css">
-      <publishTime>07/22/2018 22:36:05</publishTime>
+      <publishTime>07/29/2018 21:05:00</publishTime>
     </File>
     <File Include="css/style.css">
       <publishTime>07/02/2018 19:56:43</publishTime>
@@ -737,7 +737,7 @@
       <publishTime>07/29/2018 20:46:31</publishTime>
     </File>
     <File Include="Views/Shared/_Footer.cshtml">
-      <publishTime>07/02/2018 17:15:55</publishTime>
+      <publishTime>07/29/2018 21:09:21</publishTime>
     </File>
     <File Include="Views/Shared/_Header.cshtml">
       <publishTime>07/21/2018 15:58:48</publishTime>
