@@ -1,7 +1,10 @@
 ﻿@{
     string controller = ViewContext.RouteData.Values["controller"].ToString().ToLower();
     string action = ViewContext.RouteData.Values["action"].ToString().ToLower();
-    string url = Request.Url.AbsoluteUri;
+    DateTime st = DateTime.UtcNow.AddHours(8).AddDays(1);
+    DateTime end = st.AddDays(1);
+    string orderUrl = string.Format("https://www.owlting.com/booking/BE/index.html?hid=d9280bbc-1a53-453b-ba40-9a6e1bd8b752&v=ow_20180724&cin={0}&cout={1}",
+                         st.ToString("yyyy-MM-dd"), end.ToString("yyyy-MM-dd"));
 }
 <!-- /Desktop Nav -->
 <div class="hidden-xs header">
@@ -37,11 +40,8 @@
                         <a href="~/home/Location" @if (action == "location") { <text> class="active" </text>         }
                            onclick="ga('send', 'event', 'pc-navbar', '點擊', '交通指南');">交通指南</a>
                     </li>
-                    @*<li>
-                            <a href="javascript:void(0)" onclick="$('html, body').scrollTop(99999);" >聯絡我們</a>
-                        </li>*@
                     <li>
-                        <a href="http://bit.ly/2tz3ZrZ" target="_blank" disabled="true">線上訂房</a>
+                        <a href="@orderUrl" target="_blank" disabled="true">線上訂房</a>
                     </li>
                 </ul>
             </div>
@@ -91,7 +91,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://bit.ly/2tz3ZrZ" onclick="ga('send', 'event', 'mobile-navbar', '點擊', '線上訂房');" target="_blank">
+                    <a href="@orderUrl" onclick="ga('send', 'event', 'mobile-navbar', '點擊', '線上訂房');" target="_blank">
                         <i class="fas fa-fish fa-sm"></i>線上訂房
                     </a>
                 </li>
