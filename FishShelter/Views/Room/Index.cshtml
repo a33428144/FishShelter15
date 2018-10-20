@@ -37,11 +37,13 @@
                 <br />
                 景觀：@string.Format("{0}樓{1}",@Model.floor, Model.view)
                 <br />
+                坪數：@string.Format("{0}坪", @Model.square)
+                <br />
                 平日：<span class="price">@Model.normalDay.ToString("#,#")元</span>
                 <br />
                 假日：<span class="price">@Model.holiDay.ToString("#,#")元</span>
             </div>
-            <div class="col-xs-6 p-0 text-right animated fadeInRightBig" style="margin-top:85px">
+            <div class="col-xs-6 p-0 text-right animated fadeInRightBig" style="margin-top:115px">
                 <a href="@orderUrl" class="btn-blue" target="_blank">
                     <span>立即預定</span>
                     <i class="fas fa-chevron-right fa-sm"></i>
