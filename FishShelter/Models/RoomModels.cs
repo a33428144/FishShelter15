@@ -12,8 +12,8 @@ namespace FishShelter.Models
         public string id { get; set; }
         public string name { get; set; }
         public string description { get; set; }
-        public int people { get; set; }
-        public int square { get; set; }
+        public decimal people { get; set; }
+        public double square { get; set; }
         public int floor { get; set; }
         public string view { get; set; }
         public int photoCount { get; set; }
