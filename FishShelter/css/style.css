@@ -181,7 +181,7 @@ header.carousel {
         filter: alpha(opacity=80);
         -moz-opacity: 0.8;
         -khtml-opacity: 0.8;
-        opacity:0.8;
+        opacity: 0.8;
         color: #fff !important;
         -webkit-transition: all .5s ease;
         -moz-transition: all .5s ease;
@@ -589,4 +589,9 @@ input.form-control {
 #room-area2 a:focus,
 #room-area2 a:hover {
     text-decoration: none;
+}
+
+#youtube {
+    width: 768px;
+    height: 460px;
 }

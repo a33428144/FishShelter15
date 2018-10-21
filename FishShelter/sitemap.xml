@@ -4,74 +4,74 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
-  <loc>http://www.fishhome15.com/</loc>
-  <lastmod>2018-08-04T06:58:51+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://www.fishhome15.com/home/index</loc>
-  <lastmod>2018-08-04T06:58:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.fishhome15.com/home/about</loc>
-  <lastmod>2018-08-04T06:58:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.fishhome15.com/home/room</loc>
-  <lastmod>2018-08-04T06:58:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.fishhome15.com/home/notice</loc>
-  <lastmod>2018-08-04T06:58:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.fishhome15.com/home/Location</loc>
-  <lastmod>2018-08-04T06:58:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.fishhome15.com/room/index?id=301</loc>
-  <lastmod>2018-08-04T06:58:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.fishhome15.com/room/index?id=302</loc>
-  <lastmod>2018-08-04T06:58:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.fishhome15.com/room/index?id=303</loc>
-  <lastmod>2018-08-04T06:58:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.fishhome15.com/room/index?id=401</loc>
-  <lastmod>2018-08-04T06:58:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.fishhome15.com/room/index?id=402</loc>
-  <lastmod>2018-08-04T06:58:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.fishhome15.com/room/index?id=501</loc>
-  <lastmod>2018-08-04T06:58:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.fishhome15.com/room/index?id=601</loc>
-  <lastmod>2018-08-04T06:58:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>http://www.fishhome15.com/</loc>
+    <lastmod>2018-10-20T14:50:15+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>http://www.fishhome15.com/home/index</loc>
+    <lastmod>2018-10-20T14:50:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://www.fishhome15.com/home/about</loc>
+    <lastmod>2018-10-20T14:50:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://www.fishhome15.com/home/room</loc>
+    <lastmod>2018-10-20T14:50:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://www.fishhome15.com/home/notice</loc>
+    <lastmod>2018-10-20T14:50:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://www.fishhome15.com/home/Location</loc>
+    <lastmod>2018-10-20T14:50:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://www.fishhome15.com/room/index?id=301</loc>
+    <lastmod>2018-10-20T14:50:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://www.fishhome15.com/room/index?id=302</loc>
+    <lastmod>2018-10-20T14:50:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://www.fishhome15.com/room/index?id=303</loc>
+    <lastmod>2018-10-20T14:50:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://www.fishhome15.com/room/index?id=401</loc>
+    <lastmod>2018-10-20T14:50:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://www.fishhome15.com/room/index?id=402</loc>
+    <lastmod>2018-10-20T14:50:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://www.fishhome15.com/room/index?id=501</loc>
+    <lastmod>2018-10-20T14:50:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://www.fishhome15.com/room/index?id=601</loc>
+    <lastmod>2018-10-20T14:50:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 
 
 </urlset>

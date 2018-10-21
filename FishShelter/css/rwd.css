@@ -211,11 +211,6 @@
         width: 75%;
     }
 
-    /*.gray-bg {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }*/
-
     .room-padding {
         padding-left: 25px !important;
         padding-right: 25px !important;
@@ -406,5 +401,13 @@
 
     .footer .border-right {
         border-right: transparent !important;
+    }
+
+
+    #youtube {
+        width: 100% !important;
+        height: 240px !important;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
