@@ -18,8 +18,8 @@ namespace FishShelter.Service
                 floor = 3,
                 view = "海景",
                 photoCount = 7,
-                normalDay = 2600,
-                holiDay = 3000,
+                normalDay = 2200,
+                holiDay = 2600,
                 url = "http://bit.ly/2KzfkQc",
                 roomFacilities = new List<string>()
                 {
@@ -38,8 +38,8 @@ namespace FishShelter.Service
                 floor = 3,
                 view = "海景",
                 photoCount = 7,
-                normalDay = 2600,
-                holiDay = 3000,
+                normalDay = 2200,
+                holiDay = 2600,
                 url = "http://bit.ly/2lOyp65",
                 roomFacilities = new List<string>()
                 {
@@ -58,8 +58,8 @@ namespace FishShelter.Service
                 floor = 3,
                 view = "山景",
                 photoCount = 7,
-                normalDay = 3000,
-                holiDay = 3600,
+                normalDay = 2600,
+                holiDay = 3000,
                 url = "http://bit.ly/2tIr1Oe",
                 roomFacilities = new List<string>()
                 {
@@ -76,8 +76,8 @@ namespace FishShelter.Service
                 floor = 4,
                 view = "海景",
                 photoCount = 8,
-                normalDay = 3600,
-                holiDay = 4500,
+                normalDay = 3200,
+                holiDay = 3600,
                 url = "http://bit.ly/2tHvcKd",
                 roomFacilities = new List<string>()
                 {
@@ -96,8 +96,8 @@ namespace FishShelter.Service
                 floor = 4,
                 view = "山景",
                 photoCount = 7,
-                normalDay = 3400,
-                holiDay = 4300,
+                normalDay = 3000,
+                holiDay = 3400,
                 url = "http://bit.ly/2KEs9so",
                 roomFacilities = new List<string>()
                 {
@@ -115,8 +115,8 @@ namespace FishShelter.Service
                 floor = 5,
                 view = "海景",
                 photoCount = 8,
-                normalDay = 4500,
-                holiDay = 5100,
+                normalDay = 3800,
+                holiDay = 4200,
                 url = "http://bit.ly/2IFqK3g",
                 roomFacilities = new List<string>()
                 {
@@ -138,8 +138,8 @@ namespace FishShelter.Service
                 floor = 6,
                 view = "海景",
                 photoCount = 8,
-                normalDay = 2700,
-                holiDay = 3200,
+                normalDay = 2500,
+                holiDay = 2800,
                 url = "http://bit.ly/2IFDW84",
                 roomFacilities = new List<string>()
                 {
