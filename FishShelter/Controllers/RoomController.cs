@@ -13,6 +13,7 @@ namespace FishShelter.Controllers
         public ActionResult Index(string id)
         {
             RoomService RoomService = new RoomService();
+            ViewData["id"] = id;
             return View(RoomService.GetData().First(f => f.id == id));
         }
 

@@ -28,7 +28,7 @@
         "http://www.fishhome15.com/img/room/301.jpg",
         "http://www.fishhome15.com/img/room/401.jpg"
         ],
-        "telephone" : "(02)2497-7536",
+        "telephone" : "0908-203-789",
         "email" : "service@fishhome15.com",
         "address" :{
         "@@type": "PostalAddress",
@@ -76,7 +76,17 @@
         <img height="1" width="1" style="display:none"
              src="https://www.facebook.com/tr?id=284155798992346&ev=PageView&noscript=1" />
     </noscript>
-
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WNHF3F6');</script>
+    <!-- End Google Tag Manager -->
     @Html.Partial("_Include")
 </head>
 <body>
@@ -99,7 +109,12 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNHF3F6"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     @Html.Partial("_Header")
     <h1 style="display:none">瑞芳民宿,基隆民宿,基隆住宿,瑞芳住宿,基隆訂房,瑞芳訂房</h1>
     @RenderBody()

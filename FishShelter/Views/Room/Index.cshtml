@@ -2,10 +2,14 @@
 @model RoomModels
 @{
     string pic = "";
+    string id = ViewData["id"] as string;
     DateTime st = DateTime.UtcNow.AddHours(8).AddDays(1);
     DateTime end = st.AddDays(1);
     string orderUrl = string.Format("https://www.owlting.com/booking/BE/index.html?hid=d9280bbc-1a53-453b-ba40-9a6e1bd8b752&v=ow_20180724&cin={0}&cout={1}",
         st.ToString("yyyy-MM-dd"), end.ToString("yyyy-MM-dd"));
+    if(id == "601") {
+        orderUrl = "http://bit.ly/2IFDW84";
+    }
 }
 <script src="~/js/room.js"></script>
 <div class="gray-bg">
@@ -14,12 +18,11 @@
             <div class="m-b-30 ma5slider inside-navs outside-dots horizontal-navs horizontal-dots anim-fade inside-dots autoplay"
                  data-tempo="4000">
                 <div class="slides">
-                    @for (int i = 1; i <= Model.photoCount; i++)
-                    {
+                    @for (int i = 1; i <= Model.photoCount; i++) {
                         {
                             pic = string.Format("/img/{0}/{1}.jpg", @Model.id, @i);
                         }
-                    <img src="@pic" class="img room-pic white-border" style="">
+                        <img src="@pic" class="img room-pic white-border" style="">
                     }
                 </div>
             </div>
@@ -33,9 +36,9 @@
                 @Model.description
             </div>
             <div class="m-t-20 col-xs-6 p-0">
-                人數：@string.Format("{0}人",@Model.people)
+                人數：@string.Format("{0}人", @Model.people)
                 <br />
-                景觀：@string.Format("{0}樓{1}",@Model.floor, Model.view)
+                景觀：@string.Format("{0}樓{1}", @Model.floor, Model.view)
                 <br />
                 坪數：@string.Format("{0}坪", @Model.square)
                 <br />
@@ -50,25 +53,25 @@
                 </a>
             </div>
             @*<ul class="m-t-20 hidden-sm hidden-xs">
-                    <li class="m-b-5">
-                        <a href="tel:0224977536">
-                            <i class="fas fa-phone" style="font-size: 1.2em;"></i>
-                            (02)2497-7536
-                        </a>
-                    </li>
-                    <li class="m-b-5">
-                        <a href="http://bit.ly/2yyd4az" target="_blank">
-                            <i class="fab fa-line" style="font-size:1.5em"></i>
-                            @@rcn3729
-                        </a>
-                    </li>
-                    <li class="m-b-5">
-                        <a href="mailto:service@fishhome15.com" target="_blank">
-                            <i class="fas fa-envelope fa-lg"></i>
-                            service@fishhome15.com
-                        </a>
-                    </li>
-                </ul>*@
+        <li class="m-b-5">
+            <a href="tel:0908203789">
+                <i class="fas fa-phone" style="font-size: 1.2em;"></i>
+                0908-203-789
+            </a>
+        </li>
+        <li class="m-b-5">
+            <a href="http://bit.ly/2yyd4az" target="_blank">
+                <i class="fab fa-line" style="font-size:1.5em"></i>
+                @@rcn3729i
+            </a>
+        </li>
+        <li class="m-b-5">
+            <a href="mailto:service@fishhome15.com" target="_blank">
+                <i class="fas fa-envelope fa-lg"></i>
+                service@fishhome15.com
+            </a>
+        </li>
+    </ul>*@
         </div>
     </div>
 </div>
