@@ -85,33 +85,43 @@
             }); var f = d.getElementsByTagName(s)[0],
             j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
             'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WNHF3F6');</script>
+        })(window, document, 'script', 'dataLayer', 'GTM-MSD2TVT');</script>
     <!-- End Google Tag Manager -->
     @Html.Partial("_Include")
+
 </head>
 <body>
-    <div class="fb-customerchat" page_id="156220058552387">
-    </div>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
     <script>
         window.fbAsyncInit = function () {
             FB.init({
-                appId: '2150880151855774',
-                autoLogAppEvents: true,
                 xfbml: true,
-                version: 'v2.5'
+                version: 'v3.2'
             });
         };
+
         (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
+            if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/zh_TW/sdk.js";
+            js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
             fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+         attribution=setup_tool
+         page_id="156220058552387"
+         theme_color="#0084ff"
+         logged_in_greeting="嗨~有任何問題都可以和我聯絡"
+         logged_out_greeting="嗨~有任何問題都可以和我聯絡">
+    </div>
+
+
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNHF3F6"
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSD2TVT"
                 height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
