@@ -1,44 +1,59 @@
-﻿@using FishShelter.Service
+﻿@model List<RoomModels>
 @using FishShelter.Models
-@{
-    RoomService RoomService = new RoomService();
-    List<RoomModels> rooms = RoomService.GetData();
-}
-<table style="width: 100%;line-height: 2.5em !important;">
+<style>
+    #price,
+    #price th,
+    #price tr,
+    #price td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+</style>
+
+<label class="m-t-0">平／假日定義</label>
+<ul class="p-l-0">
+    <li>平日：星期日－星期四</li>
+    <li>假日：星期五、星期六、國定假日、連續假日</li>
+</ul>
+<label class="m-t-0">淡／旺季定義</label>
+<ul class="p-l-0">
+    <li>淡季：11月－4月</li>
+    <li>假日：5月－10月</li>
+</ul>
+<table id="price" style="width: 100%;margin-top:10px">
     <thead>
         <tr>
             <th class="text-center">房型名稱</th>
             <th class="text-center hidden-xs">樓層</th>
+
             <th class="text-center hidden-xs">入住人數</th>
-            <th class="text-center">平日</th>
-            <th class="text-center">假日</th>
-            <th class="text-center">&emsp;</th>
+            <th class="text-center">淡季平日／假日</th>
+            <th class="text-center">旺季平日／假日</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var r in rooms)
-        {
+        @foreach (var r in Model) {
             <tr>
-                <td class="text-center">@r.id@r.name</td>
-                <td class="text-center hidden-xs">@string.Format("{0}樓", @r.floor)</td>
+                <td class="text-center" style="color: #009c9c;font-weight:bold">@r.id@r.name</td>
+                <td class="text-center hidden-xs">@string.Format("{0}樓{1}", @r.floor, @r.view)</td>
                 <td class="text-center hidden-xs">@string.Format("{0}人", @r.people)</td>
-                <td class="text-center">$@r.normalDay.ToString("#,#")</td>
-                <td class="text-center">$@r.holiDay.ToString("#,#")</td>
-                <td class="text-center">&emsp;</td>
+                <td class="text-center">$@r.winterNormalDay.ToString("#,#")／@r.winterHoliDay.ToString("#,#")</td>
+                <td class="text-center">$@r.summerNormalDay.ToString("#,#")／@r.summerHoliDay.ToString("#,#")</td>
             </tr>
         }
-        <tr>
-            <td class="text-center">包棟</td>
-            <td class="text-center hidden-xs">6層</td>
-            <td class="text-center hidden-xs">22人</td>
-            <td class="text-center" colspan="2">
-                優惠洽詢請來電
-                <a href="tel:0908203789" style="color: #2f80a0;text-decoration: underline;">0908-203-789</a>
-                或私訊
-                <a href="https://bit.ly/2K5AfgE" target="_blank" style="color: #2f80a0;text-decoration: underline;">FB粉絲專頁</a>、
-                <a href="http://bit.ly/2yyd4az" target="_blank" style="color: #2f80a0;text-decoration: underline;">Line</a>
-            </td>
-            <td class="text-center">&emsp;</td>
-        </tr>
+        @if (Model.Count > 1) {
+            <tr>
+                <td class="text-center" style="color: #009c9c;font-weight:bold">包棟</td>
+                <td class="text-center hidden-xs">-</td>
+                <td class="text-center hidden-xs">22人</td>
+                <td class="text-center" colspan="2">
+                    優惠洽詢請來電
+                    <a href="tel:0908203789" style="color: #2f80a0;text-decoration: underline;">0908-203-789</a>
+                    或私訊
+                    <a href="https://bit.ly/2K5AfgE" target="_blank" style="color: #2f80a0;text-decoration: underline;">FB粉絲專頁</a>、
+                    <a href="http://bit.ly/2yyd4az" target="_blank" style="color: #2f80a0;text-decoration: underline;">Line</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

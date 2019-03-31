@@ -7,8 +7,17 @@
     DateTime end = st.AddDays(1);
     string orderUrl = string.Format("https://www.owlting.com/booking/BE/index.html?hid=d9280bbc-1a53-453b-ba40-9a6e1bd8b752&v=ow_20180724&cin={0}&cout={1}",
         st.ToString("yyyy-MM-dd"), end.ToString("yyyy-MM-dd"));
-    if(id == "601") {
+    if (id == "601") {
         orderUrl = "http://bit.ly/2IFDW84";
+    }
+    string monthPrice = "11-4月淡季價格";
+    decimal holiDay = Model.winterHoliDay;
+    decimal normalDay = Model.winterNormalDay;
+    int month = DateTime.UtcNow.AddHours(8).Month;
+    if (month > 5 && month < 10) {
+        monthPrice = "5-10月旺季價格";
+        holiDay = Model.summerHoliDay;
+        normalDay = Model.summerNormalDay;
     }
 }
 <script src="~/js/room.js"></script>
@@ -35,43 +44,23 @@
             <div class="m-t-20">
                 @Model.description
             </div>
-            <div class="m-t-20 col-xs-6 p-0">
+            <div class="m-t-20 col-xs-7 p-0">
                 人數：@string.Format("{0}人", @Model.people)
                 <br />
-                景觀：@string.Format("{0}樓{1}", @Model.floor, Model.view)
+                景觀：@string.Format("{0}樓{1}／{2}坪", @Model.floor, Model.view, @Model.square)
                 <br />
-                坪數：@string.Format("{0}坪", @Model.square)
+                平日：<span class="price">@normalDay.ToString("#,#")元</span>
                 <br />
-                平日：<span class="price">@Model.normalDay.ToString("#,#")元</span>
+                假日：<span class="price">@holiDay.ToString("#,#")元</span>
                 <br />
-                假日：<span class="price">@Model.holiDay.ToString("#,#")元</span>
+                <span style="color:#999">（@monthPrice）</span>
             </div>
-            <div class="col-xs-6 p-0 text-right animated fadeInRightBig" style="margin-top:115px">
+            <div class="col-xs-5 p-0 text-right animated fadeInRightBig" style="margin-top:115px">
                 <a href="@orderUrl" class="btn-blue" target="_blank">
                     <span>立即預定</span>
                     <i class="fas fa-chevron-right fa-sm"></i>
                 </a>
             </div>
-            @*<ul class="m-t-20 hidden-sm hidden-xs">
-        <li class="m-b-5">
-            <a href="tel:0908203789">
-                <i class="fas fa-phone" style="font-size: 1.2em;"></i>
-                0908-203-789
-            </a>
-        </li>
-        <li class="m-b-5">
-            <a href="http://bit.ly/2yyd4az" target="_blank">
-                <i class="fab fa-line" style="font-size:1.5em"></i>
-                @@rcn3729i
-            </a>
-        </li>
-        <li class="m-b-5">
-            <a href="mailto:service@fishhome15.com" target="_blank">
-                <i class="fas fa-envelope fa-lg"></i>
-                service@fishhome15.com
-            </a>
-        </li>
-    </ul>*@
         </div>
     </div>
 </div>
