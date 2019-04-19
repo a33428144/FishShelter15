@@ -10,12 +10,12 @@
     if (id == "601") {
         orderUrl = "http://bit.ly/2IFDW84";
     }
-    string monthPrice = "11-4月淡季價格";
+    string monthPrice = "11月-4月淡季價格";
     decimal holiDay = Model.winterHoliDay;
     decimal normalDay = Model.winterNormalDay;
     int month = DateTime.UtcNow.AddHours(8).Month;
-    if (month > 5 && month < 10) {
-        monthPrice = "5-10月旺季價格";
+    if (month > 4 && month < 11) {
+        monthPrice = "5月-10月旺季價格";
         holiDay = Model.summerHoliDay;
         normalDay = Model.summerNormalDay;
     }
