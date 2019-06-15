@@ -129,7 +129,7 @@ namespace FishShelter.Service {
                 url = "http://bit.ly/2IFqK3g",
                 roomFacilities = new List<string>()
                 {
-                    "私人廣場(含高腳椅)",
+                    "私人廣場",
                     "景觀陽台",
                     "泡澡浴缸",
                     "搖椅",
