@@ -19,7 +19,6 @@ namespace FishShelter.Service {
                 winterNormalDay = 2200,
                 winterHoliDay = 2600,
                 yearHoliDay = 3400,
-                url = "http://bit.ly/2KzfkQc",
                 roomFacilities = new List<string>()
                 {
                     "獨立景觀陽台",
@@ -41,7 +40,6 @@ namespace FishShelter.Service {
                 winterNormalDay = 2200,
                 winterHoliDay = 2600,
                 yearHoliDay = 3400,
-                url = "http://bit.ly/2lOyp65",
                 roomFacilities = new List<string>()
                 {
                     "獨立景觀陽台",
@@ -63,7 +61,6 @@ namespace FishShelter.Service {
                 winterNormalDay = 2900,
                 winterHoliDay = 3200,
                 yearHoliDay = 4500,
-                url = "http://bit.ly/2tIr1Oe",
                 roomFacilities = new List<string>()
                 {
                     "木質桌椅"
@@ -83,7 +80,6 @@ namespace FishShelter.Service {
                 winterNormalDay = 3400,
                 winterHoliDay = 3800,
                 yearHoliDay = 5200,
-                url = "http://bit.ly/2tHvcKd",
                 roomFacilities = new List<string>()
                 {
                     "獨立景觀陽台×2",
@@ -105,7 +101,6 @@ namespace FishShelter.Service {
                 winterNormalDay = 3200,
                 winterHoliDay = 3600,
                 yearHoliDay = 4800,
-                url = "http://bit.ly/2KEs9so",
                 roomFacilities = new List<string>()
                 {
                     "獨立景觀陽台",
@@ -126,7 +121,6 @@ namespace FishShelter.Service {
                 winterNormalDay = 3800,
                 winterHoliDay = 4200,
                 yearHoliDay = 5500,
-                url = "http://bit.ly/2IFqK3g",
                 roomFacilities = new List<string>()
                 {
                     "私人廣場",
@@ -145,13 +139,12 @@ namespace FishShelter.Service {
                 floor = 6,
                 square = 10,
                 view = "海景",
-                photoCount = 6,
+                photoCount = 4,
                 summerNormalDay = 2700,
                 summerHoliDay = 3200,
                 winterNormalDay = 2500,
                 winterHoliDay = 2800,
                 yearHoliDay = 3600,
-                url = "http://bit.ly/2IFDW84",
                 roomFacilities = new List<string>()
                 {
                     "獨立景觀陽台",

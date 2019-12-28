@@ -5,17 +5,14 @@
     string id = ViewData["id"] as string;
     DateTime st = DateTime.UtcNow.AddHours(8).AddDays(1);
     DateTime end = st.AddDays(1);
-    string orderUrl = string.Format("https://www.owlting.com/booking/BE/index.html?hid=d9280bbc-1a53-453b-ba40-9a6e1bd8b752&v=ow_20180724&cin={0}&cout={1}",
-        st.ToString("yyyy-MM-dd"), end.ToString("yyyy-MM-dd"));
-    if (id == "601") {
-        orderUrl = "http://bit.ly/2IFDW84";
-    }
-    string monthPrice = "11月-4月淡季價格";
+
+    string orderUrl = string.Format("https://booking.owlting.com/d9280bbc-1a53-453b-ba40-9a6e1bd8b752?adult=2&child=0&infant=0&start={0}&end={1}", st.ToString("yyyy-MM-dd"), end.ToString("yyyy-MM-dd"));
+    string monthPrice = "11月-4月為淡季價格";
     decimal holiDay = Model.winterHoliDay;
     decimal normalDay = Model.winterNormalDay;
     int month = DateTime.UtcNow.AddHours(8).Month;
     if (month > 4 && month < 11) {
-        monthPrice = "5月-10月旺季價格";
+        monthPrice = "5月-10月為旺季價格";
         holiDay = Model.summerHoliDay;
         normalDay = Model.summerNormalDay;
     }
@@ -57,7 +54,7 @@
             </div>
             <div class="col-xs-5 p-0 text-right animated fadeInRightBig" style="margin-top:115px">
                 <a href="@orderUrl" class="btn-blue" target="_blank">
-                    <span>立即預定</span>
+                    <span>立即訂房</span>
                     <i class="fas fa-chevron-right fa-sm"></i>
                 </a>
             </div>

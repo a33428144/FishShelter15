@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <ApplicationInsightsResourceId>/subscriptions/7cac982a-444b-4bda-b7ee-7796c395ca0f/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/FishShelter</ApplicationInsightsResourceId>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -261,8 +262,6 @@
     <Content Include="img\601\2.jpg" />
     <Content Include="img\601\3.jpg" />
     <Content Include="img\601\4.jpg" />
-    <Content Include="img\601\5.jpg" />
-    <Content Include="img\601\6.jpg" />
     <Content Include="img\about\3.jpg" />
     <Content Include="img\about\1.jpg" />
     <Content Include="img\black.png" />
