@@ -252,12 +252,15 @@
     <Content Include="img\402\3.jpg" />
     <Content Include="img\402\4.jpg" />
     <Content Include="img\402\5.jpg" />
-    <Content Include="img\402\6.jpg" />
     <Content Include="img\501\1.jpg" />
     <Content Include="img\501\2.jpg" />
     <Content Include="img\501\3.jpg" />
     <Content Include="img\501\4.jpg" />
     <Content Include="img\501\5.jpg" />
+    <Content Include="img\502\1.jpg" />
+    <Content Include="img\502\2.jpg" />
+    <Content Include="img\502\3.jpg" />
+    <Content Include="img\502\4.jpg" />
     <Content Include="img\601\1.jpg" />
     <Content Include="img\601\2.jpg" />
     <Content Include="img\601\3.jpg" />
@@ -274,6 +277,7 @@
     <Content Include="img\gray_bg.jpg" />
     <Content Include="img\gray_bg2.jpg" />
     <Content Include="img\logo.png" />
+    <Content Include="img\room\502.jpg" />
     <Content Include="img\room\301.jpg" />
     <Content Include="img\room\302.jpg" />
     <Content Include="img\room\303.jpg" />

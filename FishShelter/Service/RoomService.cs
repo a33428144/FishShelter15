@@ -23,6 +23,7 @@ namespace FishShelter.Service {
                 {
                     "獨立景觀陽台",
                     "戶外桌椅",
+                    "泡澡浴缸",
                     "梳妝台"
                 }
             });
@@ -95,7 +96,7 @@ namespace FishShelter.Service {
                 floor = 4,
                 square = 8,
                 view = "山景",
-                photoCount = 6,
+                photoCount = 5,
                 summerNormalDay = 3400,
                 summerHoliDay = 4300,
                 winterNormalDay = 3200,
@@ -114,19 +115,40 @@ namespace FishShelter.Service {
                 people = 4,
                 floor = 5,
                 square = 12,
-                view = "海景",
+                view = "山景、海景",
                 photoCount = 5,
-                summerNormalDay = 4500,
-                summerHoliDay = 5100,
-                winterNormalDay = 3800,
-                winterHoliDay = 4200,
-                yearHoliDay = 5500,
+                summerNormalDay = 3600,
+                summerHoliDay = 4500,
+                winterNormalDay = 3600,
+                winterHoliDay = 4000,
+                yearHoliDay = 5000,
                 roomFacilities = new List<string>()
                 {
                     "私人廣場",
                     "景觀陽台",
                     "泡澡浴缸",
                     "搖椅",
+                    "冰箱",
+                    "梳妝台"
+                }
+            });
+            data.Add(new RoomModels() {
+                id = "502",
+                name = "珊海魚礁",
+                description = "當陣風穿透巨大的魚礁，海洋之歌就被奏響了。向前看是海，向後看是山，花兩個小時向上看夜空，星星或許會掉進來。掉進你的浴缸、你的露台、家人的夢、珊瑚的海。",
+                people = 4,
+                floor = 5,
+                square = 12,
+                view = "山景、海景",
+                photoCount = 4,
+                summerNormalDay = 3400,
+                summerHoliDay = 4200,
+                winterNormalDay = 3200,
+                winterHoliDay = 3600,
+                yearHoliDay = 4700,
+                roomFacilities = new List<string>()
+                {
+                    "泡澡浴缸",
                     "冰箱",
                     "梳妝台"
                 }
