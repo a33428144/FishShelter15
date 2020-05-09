@@ -136,7 +136,7 @@ namespace FishShelter.Service {
                 id = "502",
                 name = "珊海魚礁",
                 description = "當陣風穿透巨大的魚礁，海洋之歌就被奏響了。向前看是海，向後看是山，花兩個小時向上看夜空，星星或許會掉進來。掉進你的浴缸、你的露台、家人的夢、珊瑚的海。",
-                people = 4,
+                people = 3,
                 floor = 5,
                 square = 8,
                 view = "山景、海景",
