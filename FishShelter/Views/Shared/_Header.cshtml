@@ -4,7 +4,6 @@
     DateTime st = DateTime.UtcNow.AddHours(8).AddDays(1);
     DateTime end = st.AddDays(1);
     string orderUrl = string.Format("https://booking.owlting.com/d9280bbc-1a53-453b-ba40-9a6e1bd8b752?adult=2&child=0&infant=0&start={0}&end={1}", st.ToString("yyyy-MM-dd"), end.ToString("yyyy-MM-dd"));
-    string monthPrice = "11月-4月為淡季價格";
 }
 <!-- /Desktop Nav -->
 <div class="hidden-xs header">
@@ -30,6 +29,7 @@
                             客房介紹
                         </a>
                     </li>
+
                     <li>
                         <a href="~/home/notice" @if (action == "notice") { <text> class="active" </text> }
                            onclick="trigger('pc-navbar', '點擊', '訂房須知');">
@@ -39,6 +39,12 @@
                     <li>
                         <a href="~/home/Location" @if (action == "location") { <text> class="active" </text> }
                            onclick="trigger('pc-navbar', '點擊', '交通指南');">交通指南</a>
+                    </li>
+                    <li>
+                        <a href="~/home/tv" @if (action == "tv" || controller == "tv") { <text> class="active" </text> }
+                           onclick="trigger('pc-navbar', '點擊', '節目推薦');">
+                            節目推薦
+                        </a>
                     </li>
                     <li>
                         <a href="@orderUrl" target="_blank">線上訂房</a>

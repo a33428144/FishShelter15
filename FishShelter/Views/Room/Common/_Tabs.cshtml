@@ -19,11 +19,6 @@
         </li>
         <li>
             <a href="#tabs-4">
-                愛玩客推薦
-            </a>
-        </li>
-        <li>
-            <a href="#tabs-5">
                 淡/旺季價格
             </a>
         </li>
@@ -40,11 +35,6 @@
         @Html.Partial("Common/_Reservation")
     </div>
     <div id="tabs-4">
-        <div class="col-xs-12 p-t-20 text-left">
-            <iframe id="youtube" src="http://www.youtube.com/embed/QXtPUHsafsw?start=2490" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div id="tabs-5">
         @Html.Partial("~/Views/Room/Common/_Price.cshtml", new List<RoomModels>() { Model})
     </div>
 </div>
