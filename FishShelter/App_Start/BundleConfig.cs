@@ -23,7 +23,6 @@ namespace FishShelter
                       "~/css/bootstrap.min.css",
                       "~/css/style.css",                
                       "~/css/ma5slider.css"));
-
         }
     }
 }
