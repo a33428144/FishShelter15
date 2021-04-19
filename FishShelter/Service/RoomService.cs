@@ -1,9 +1,12 @@
 ﻿using FishShelter.Models;
 using System.Collections.Generic;
 
-namespace FishShelter.Service {
-    public class RoomService {
-        public List<RoomModels> GetData() {
+namespace FishShelter.Service
+{
+    public class RoomService
+    {
+        public List<RoomModels> GetData()
+        {
             List<RoomModels> data = new List<RoomModels>
             {
                 new RoomModels()
@@ -163,7 +166,7 @@ namespace FishShelter.Service {
                 new RoomModels()
                 {
                     id = "601",
-                    name = "詩人魚礁 ",
+                    name = "詩人魚礁",
                     description = "登上山之巔與海水最透明的地方，成為漁村裡的詩人。玻璃架裡有最盛的日光雲彩與蔚藍海流，躺在天空毫無遮掩的正下方，返璞歸真地思考海洋和人真正的樣子。",
                     people = 2,
                     floor = 6,

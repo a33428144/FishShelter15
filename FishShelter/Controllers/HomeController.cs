@@ -50,5 +50,11 @@ namespace FishShelter.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public ActionResult ZOCHA()
+        {
+            return View();
+        }
     }
 }

@@ -271,6 +271,7 @@
     <Content Include="Views\Room\Common\_Reservation.cshtml" />
     <Content Include="Views\Room\Common\_Tabs.cshtml" />
     <Content Include="Views\Home\TV.cshtml" />
+    <Content Include="Views\Home\ZOCHA.cshtml" />
     <None Include="Views\Room\Common\_Contact.cshtml" />
     <Content Include="Views\Home\Room.cshtml" />
     <Content Include="Views\Room\Common\_Price.cshtml" />
