@@ -101,7 +101,7 @@ namespace FishShelter.Service
                     id = "402",
                     name = "秘密魚礁",
                     description = "害羞的人看海，不想被人看到。這裡有草有樹有小小陽台，有山的緩坡和海的彩度，早上不用全員集合起床號，自己爬上高腳椅，獨享從海平面慢慢升上來的一顆紅太陽。",
-                    people = 4,
+                    people = 2,
                     floor = 4,
                     square = 8,
                     view = "山景",
