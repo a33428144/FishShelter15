@@ -4,7 +4,7 @@
     <ul>
         <li>
             <a href="#tabs-1">
-                房型說明
+                淡/旺季價格
             </a>
         </li>
         <li>
@@ -19,14 +19,12 @@
         </li>
         <li>
             <a href="#tabs-4">
-                淡/旺季價格
+                房型說明
             </a>
         </li>
     </ul>
     <div id="tabs-1">
-        @Html.Partial("Common/_RoomFacilities", Model.roomFacilities)
-        @Html.Partial("Common/_PublicFacilities")
-        @Html.Partial("Common/_Additional")
+        @Html.Partial("~/Views/Room/Common/_Price.cshtml", new List<RoomModels>() { Model})
     </div>
     <div id="tabs-2">
         @Html.Partial("Common/_Notice")
@@ -35,6 +33,8 @@
         @Html.Partial("Common/_Reservation")
     </div>
     <div id="tabs-4">
-        @Html.Partial("~/Views/Room/Common/_Price.cshtml", new List<RoomModels>() { Model})
+        @Html.Partial("Common/_RoomFacilities", Model.roomFacilities)
+        @Html.Partial("Common/_PublicFacilities")
+        @Html.Partial("Common/_Additional")
     </div>
 </div>

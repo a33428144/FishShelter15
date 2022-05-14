@@ -6,7 +6,7 @@
     #price tr,
     #price td {
         border: 1px solid #ddd;
-        padding: 8px;
+        padding: 5px;
     }
 </style>
 
@@ -15,33 +15,39 @@
     <li>平日：星期日－星期四</li>
     <li>假日：星期五、星期六、國定假日、連續假日</li>
 </ul>
-<label class="m-t-0">淡／旺季定義</label>
+<label class="m-t-0">季節定義</label>
 <ul class="p-l-0">
     <li>淡季：11月－4月</li>
-    <li>旺季：5月－10月</li>
+    <li>旺季：5月－6月、9月－10月</li>
+    <li>暑假：7月－8月</li>
 </ul>
 <table id="price" style="width: 100%;margin-top:10px">
     <thead>
         <tr>
-            <th class="text-center">房型名稱</th>
+            <th class="text-center">房型</th>
             <th class="text-center hidden-xs">樓層</th>
-
-            <th class="text-center hidden-xs">入住人數</th>
+            @*<th class="text-center hidden-xs">入住人數</th>*@
             <th class="text-center">淡季平日／假日</th>
             <th class="text-center">旺季平日／假日</th>
+            <th class="text-center">暑假</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var r in Model) {
+        @foreach (var r in Model)
+        {
             <tr>
-                <td class="text-center" style="color: #009c9c;font-weight:bold">@r.id@r.name</td>
+                <td class="text-center" style="color: #009c9c;font-weight:bold;">
+                    <a style="color:#009c9c" href="/room/index?id=@r.id">@r.id@r.name</a>
+                </td>
                 <td class="text-center hidden-xs">@string.Format("{0}樓{1}", @r.floor, @r.view)</td>
-                <td class="text-center hidden-xs">@string.Format("{0}人", @r.people)</td>
-                <td class="text-center">$@r.winterNormalDay.ToString("#,#")／@r.winterHoliDay.ToString("#,#")</td>
-                <td class="text-center">$@r.summerNormalDay.ToString("#,#")／@r.summerHoliDay.ToString("#,#")</td>
+                @*<td class="text-center hidden-xs">@string.Format("{0}人", @r.people)</td>*@
+                <td class="text-center">$@r.lowSeasonNormalDay.ToString("#,#")／@r.lowSeasonHoliDay.ToString("#,#")</td>
+                <td class="text-center">$@r.highSeasonNormalDay.ToString("#,#")／@r.highSeasonHoliDay.ToString("#,#")</td>
+                <td class="text-center">$@r.summerVacation.ToString("#,#")</td>
             </tr>
         }
-        @if (Model.Count > 1) {
+        @if (Model.Count > 1)
+        {
             <tr>
                 <td class="text-center" style="color: #009c9c;font-weight:bold">包棟</td>
                 <td class="text-center hidden-xs">-</td>
